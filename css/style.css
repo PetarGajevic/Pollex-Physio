@@ -1,4 +1,6 @@
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
 html, body{
     margin: 0%;
     box-sizing: border-box;
@@ -7,6 +9,10 @@ html, body{
 
 a{
     text-decoration: none;
+}
+
+h1{
+    font-family: "Open Sans"!important;
 }
 
 
@@ -279,10 +285,12 @@ background-size: cover;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
+    overflow: scroll!important; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
+
+  
   
   /* Modal Content */
   .modal-content {
@@ -292,8 +300,16 @@ background-size: cover;
     border: 1px solid #888;
     width: 80%;
     align-self: center;
+    animation-name: animatetop;
+    animation-duration: 0.6s
   }
 
+  /* Add Animation */
+
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
  
   
   /* The Close Button */
@@ -306,6 +322,62 @@ background-size: cover;
   
   .close:hover,
   .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close1 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close2 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close3 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close3:hover,
+  .close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close4 {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close4:hover,
+  .close4:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
