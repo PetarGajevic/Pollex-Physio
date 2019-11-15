@@ -29,17 +29,24 @@ $(document).ready(function(){
     
     })
 
-
+    var number = 800;
 
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 30,
       freeMode: true,
+      width: 1300,
+     /*  loop:true,
+      loopslides: 9, */
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+    
       },
     });
+
+    
+
 
 
     // Modal
