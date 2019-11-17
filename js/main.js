@@ -29,6 +29,11 @@ $(document).ready(function(){
     
     })
 
+    $('li#therapyNav').click(function(){
+      positiontherapy = $('.therapy-sec').offset().top - $('.nav-menu').height();
+      $('html, body').animate({scrollTop:positiontherapy}, '500', 'swing');
+    })
+
     var number = 800;
 
     var swiper = new Swiper('.swiper-container', {
@@ -69,17 +74,18 @@ $(document).ready(function(){
       window.addEventListener("click",  function(event) {
         if (event.target == modal) {
           modal.style.display = "none";
-
+          document.getElementById('htmls').style.overflow = "auto";
         }
-        document.getElementById('htmls').style.overflow = "auto";
+
       })
+      
       // Modal 1
       var modal1 = document.getElementById("myModal1");
       var btn1 = document.getElementById("btn1");
       var span1 = document.getElementsByClassName("close1")[0];
       btn1.onclick = function() {
         modal1.style.display = "block";
-        document.getElementById('htmls').style.overflow = "hidden";
+        document.getElementById('htmls').style.overflow = "hidden ";
 
       }
       span1.onclick = function() {

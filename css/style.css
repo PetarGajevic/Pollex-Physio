@@ -149,7 +149,7 @@ background-size: cover;
 
 .bio-title hr{
     margin: 16px 0 16px;
-    border: 2px solid green;
+    border: 2px solid #1fc4c4;
 }
 
 .bio-flex{
@@ -185,7 +185,7 @@ background-size: cover;
     border-radius: 125px;
     height: 250px;
     width: 250px;
-    border: 2px solid green;
+    border: 2px solid #1fc4c4;
     background-image: url('../assets/IMG_0716.jpg');
     background-position: 44% 22%;
     background-size: cover;
@@ -194,6 +194,7 @@ background-size: cover;
 .more{
     display: flex;
     flex-direction: row;
+    
 }
 
 .bio-content #moreIcon{
@@ -221,9 +222,9 @@ background-size: cover;
 
 /* -------x------Biography-----x----- */
 
-/* ------------Pollex Packets------------ */
+/* ------------Pollex Therapy------------ */
 
-.pollex-packets{
+.pollex-therapy{
     background-color: #004467;
 }
 
@@ -241,6 +242,12 @@ background-size: cover;
 
 .button:hover{
    cursor: pointer; 
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.10em);
 }
 
 .card-wraper{
@@ -271,7 +278,7 @@ background-size: cover;
 }
 
 
-/* ------x------Pollex Packets------x------ */
+/* ------x------Pollex Therapy------x------ */
 
 /* -----------Modal------------ */
 
@@ -422,8 +429,47 @@ background-size: cover;
 
 /* Viewport mobile */
 
-@media (max-width){
+@media (min-width:1451px) and (max-width:1600px){
+    #sw div{
+        width: 440px !important;
+    }
+}
 
+@media (min-width:1301px) and (max-width:1450px){
+    #sw div{
+        width: 420px !important;
+    }
+}
+
+@media (min-width:1151px) and (max-width:1300px){
+    #sw div{
+        width: 400px !important;
+    }
+}
+
+@media (min-width:975px) and (max-width:1150px){
+    #sw div{
+        width: 380px !important;
+    }
+}
+
+
+@media (min-width:900px) and (max-width:974px){
+    #sw div{
+        width: 370px !important;
+    }
+}
+
+@media (min-width:720px) and (max-width:899px){
+    #sw div{
+        width: 350px !important;
+    }
+}
+
+@media(min-width:601px) and (max-width:719px){
+    #sw div{
+        width: 320px !important;
+    }
 }
 
 @media(max-width:600px){
@@ -444,14 +490,16 @@ background-size: cover;
     .bio-content{
         width: 100%;
     }
+    .more{
+       align-self: center;
+    }
     
     .certificate {
         height: 400px;
     }
 
-    .swiper-slide {
-       width: 300px !important;
-
+    #sw div{
+        width: 310px !important;
     }
   
 }
