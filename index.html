@@ -102,8 +102,14 @@
        <div id="myModal" class="modal">
 
             <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close">&times;</span>
+            <div class="modal-content" id="bio-modal">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Biografija</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+              <!-- <span class="close">&times;</span> -->
               <p>BIOGRAFIJA
                     Postdiplomske specijalističke studije iz neurološke fizioterapije završio
                     2016.godine u Igalu (Herceg Novi), na Medicinskom fakultetu (odsjek primijenjena
@@ -160,11 +166,11 @@
             </div>
              <!-- Modal1 -->
        <div id="myModal1" class="modal">
-
+          
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close1">&times;</span>
-
+              <h1>Kineziterapija</h1>
               
               <!--Accordion wrapper-->
 
@@ -200,7 +206,7 @@
             
                 <!-- Accordion card -->
                 <div class="card">
-            
+                 
                 <!-- Card header -->
                 <div class="card-header" role="tab" id="headingThree3">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
@@ -311,6 +317,8 @@
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close2">&times;</span>
+
+              <h1>Elektroterapija</h1>
                               <!--Accordion wrapper-->
 <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
@@ -436,6 +444,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close3">&times;</span>
+              <h1>Manuelnaterapija</h1>
                                         <!--Accordion wrapper-->
 <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
@@ -579,6 +588,7 @@
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close4">&times;</span>
+              <h1>Patronazna terapija</h1>
               <p> MOGUĆNOST DOLASKA NA KUĆNU ADRESU</p>
                <p>  MOGUĆNOST PRIMJENE FIZIKALNIH INTERVENCIJA SLABO POKRETNIM I
                     NEPOKRETNIM PACIJENTIMA</p>
@@ -612,9 +622,153 @@
   </div>
         </div>
     </section>
+
+    <section class="sec-packets">
+      <div class="pollex-packets">
+        <div class="title-packets"><h1>POLLEX PHYSIO PAKETI</h1></div>
+        <div class="packet-wraper">
+        <div class="myPacket">
+          <div class="img-packet"></div>
+          <h2>Family Box</h2>
+          <p>4 tretmana terapeutske masaže od 30 min</p>
+          <p>4 tretmana spinalne manipulacije kičmenog stuba</p>
+          <p>4 tretmana akupunkture iglama</p>
+          <div class="packets-list">
+            <div>
+              <img  src="./assets/check_.svg" alt="">
+                <p> Otklanja bolove u ledjima</p>
+            </div>
+            <div>
+                <img  src="./assets/check_.svg" alt="">
+              <p> Smanjuje stres</p>
+            </div>
+            <div>
+                <img  src="./assets/check_.svg" alt="">
+             <p> Pojacava cirkulaciju u organizmu</p>
+             </div>
+          </div>
+          <button type="button" class="button" id="btn4">Zakaži</button>
+        </div>
+
+
+        <div class="myPacket">
+            <div class="img-packet1"></div>
+            <h2>Sport Recovery Box</h2>
+            <p>1 tretmana sportske masaže od 30 min</p>
+            <p>1 tretman dijatermije Tcare terapije</p>
+            <p>1 tretman akupunkture iglama</p>
+            <p>1 tretman dry cupping(vacuum therapy)</p>
+            <div class="packets-list1">
+                <div>
+                    <img  src="./assets/check_.svg" alt="">
+                <p> Brz oporavak mišića </p>
+                </div>
+                <div>
+                    <img  src="./assets/check_.svg" alt="">
+                <p> Spremnost mišića na visoke napore</p>
+                </div>
+                <div>
+                    <img  src="./assets/check_.svg" alt="">
+                <p> Veći napredak mišića</p>
+                </div>
+            </div>
+            <button type="button" class="button" id="btn5">Zakaži</button>
+          </div>
+
+          <div class="myPacket">
+              <div class="img-packet2"></div>
+              <h2>Relax Business Box</h2>
+              <p>2 tretmana terapeutske masaže od 30 min</p>
+               <p>1 tretman YUMEIHO akupresure</p>
+               <p>1 tretman akupunkture iglama</p>
+              <div class="packets-list">
+                  <div>
+                      <img  src="./assets/check_.svg" alt="">
+                  <p> Imate više snage</p>
+                  </div>
+                  <div>
+                      <img  src="./assets/check_.svg" alt="">
+                  <p> pušta mišiće </p>
+                  </div>
+                  <div>
+                      <img  src="./assets/check_.svg" alt="">
+                  <p> Osjećate se odmornije</p>
+                  </div>
+              </div>
+              <button type="button" class="button" id="btn4">Zakaži</button>
+            </div>
+
+
+         
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="bottom-footer">
+        <div class="company-footer">
+          <h2>Pollex Physio</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        </div>
+        <div class="links-footer">
+          <h2 style="margin-top: 0;">Korisni linkovi</h2>
+          <p>Link 1</p>
+          <p>Link 2</p>
+          <p>Link 3</p>
+        </div>
+        <div class="contact-footer">
+            <div class="">
+                <h2 class=" mb-4 font-weight-bold" >Kontakt</h2>
+                <p>
+                  <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                <p>
+                  <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p>
+                  <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+        </div>
+      </div>
+     
+      <div class="copy-right">
+
+ 
+          <div>
+            <p>© 2019 QQRIQ&trade;</p>
+          </div>
+          <div id="network">
+              <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.facebook.com/Pollex-physio-by-Aleksandar-Brajkovi%C4%87-108739153865065/" target="_blank">
+                      <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                      <i class="fab fa-google-plus-g fa-2x"></i>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.instagram.com/pollexphysio/?igshid=rreu5zj1z67e" target="_blank">
+                      <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                  </li>
+                </ul>
+          </div>
+     
+        
+      </div>
+    </section>
         
     </main>
 
-    
+    <!-- col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 -->
 </body>
 </html>

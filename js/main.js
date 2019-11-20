@@ -38,11 +38,9 @@ $(document).ready(function(){
 
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: -20,
       freeMode: true,
       width: 1300,
-     /*  loop:true,
-      loopslides: 9, */
       pagination: {
         el: '.swiper-pagination',
         clickable: true,

@@ -49,7 +49,7 @@ h1{
 .nav{
     background: rgba(255, 255, 255, 0.747);
     /* padding: 0 2rem; */
-    height: 0rem;
+    height: auto;
     min-height: 9vh;
     overflow: hidden;
     transition:height 1s ease-in-out
@@ -104,7 +104,7 @@ background-size: cover;
   }
 
 .myItem{
-    padding-top: 5px;
+    padding-top: 15px;
 }
 
   
@@ -207,10 +207,10 @@ background-size: cover;
 }
 
 .bio-content #moreText{
-    margin-top: 32px;
+    margin-top: 27px;
     padding-left: 20px;
-    font-size: 20px;
-    font-family: cursive;
+    font-size: 26px;
+    font-family: 'Open Sans';
 }
 
 .bio-content #moreText:hover{
@@ -218,6 +218,9 @@ background-size: cover;
     color: cornflowerblue;
 }
 
+#bio-modal p{
+    margin: 30px 20px;
+}
 
 
 /* -------x------Biography-----x----- */
@@ -229,7 +232,7 @@ background-size: cover;
 }
 
 .button {
-    background-color: #008CBA;
+    background: transparent linear-gradient(180deg, #1FC4C4 0%, #006084 100%) 0% 0% no-repeat padding-box;;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -238,6 +241,7 @@ background-size: cover;
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
+    width: 180px;
 }
 
 .button:hover{
@@ -258,17 +262,17 @@ background-size: cover;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    width: 80%;
+    width: 90%;
     margin: auto;
 }
 
 .myCard{
-    width: 17rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 4rem;
+    margin: 5rem 2.4rem;
     color: white;
     text-align: center;
 }
@@ -279,6 +283,127 @@ background-size: cover;
 
 
 /* ------x------Pollex Therapy------x------ */
+
+
+ /* Pollex Paketi */
+
+
+ #check{
+  background-image: url('../assets/check_.svg');
+  height: 10px;
+  width: 10px;
+  background-position: center;
+  background-size: cover;
+ }
+
+
+ .pollex-packets{
+    background-color: #004467;
+  }
+
+  .img-packet{
+      background-image: url('../assets/IMG_4115.jpg');
+      background-position: center;
+      background-size: cover;
+      width:  300px;
+      height: 250px;
+      border: 1.5px solid #1fc4c4;
+      border-radius: 3px;
+  }
+
+  .img-packet1{
+    background-image: url('../assets/SPORT.png');
+    background-position: center;
+    background-size: cover;
+    width:  300px;
+    height: 250px;
+    border: 1.5px solid #1fc4c4;
+    border-radius: 3px;
+  }
+
+  .img-packet2{
+    background-image: url('../assets/biznis.png');
+    background-position: center;
+    background-size: cover;
+    width:  300px;
+    height: 250px;
+    border: 1.5px solid #1fc4c4;
+    border-radius: 3px;
+  }
+
+  .title-packets{
+      color: white;
+      align-content: center;
+  }
+
+  .title-packets h1{
+    text-align: center;
+    padding-top: 50px;
+    font: Bold 42px Open Sans;
+  }
+
+  .myPacket p{
+      margin: 0;
+      white-space: nowrap;
+      font: Italic 14px/20px Open Sans;
+      letter-spacing: 0;
+      color: #9ACBE1;
+  }
+
+  .packets-list1 div,
+  .packets-list div {
+      display: flex;
+      justify-content: center;
+  }
+
+  .packets-list p , .packets-list1 p{
+    font: Regular 14px/20px Open Sans;
+    letter-spacing: 0;
+    color: #9ACBE1;
+    opacity: 1;
+    padding-left: 5px;
+  }
+
+
+  .packet-wraper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+}
+
+.myPacket{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 2.4rem;
+    color: white;
+    text-align: center;
+}
+
+.myPacket h2{
+    margin: 30px 0px;
+}
+
+.packets-list{
+    padding: 40px 0px;
+}
+
+.packets-list1{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+  
+
+  /* X  Pollex Paketi  X */
+
 
 /* -----------Modal------------ */
 
@@ -310,6 +435,17 @@ background-size: cover;
     animation-name: animatetop;
     animation-duration: 0.6s
   }
+
+  .modal-content h1{
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 50px;
+  }
+
+  .modal-content .card{
+      margin-bottom: 20px;
+  }
+  
 
   /* Add Animation */
 
@@ -427,48 +563,144 @@ background-size: cover;
  
   /* X Swiper X */
 
+
+  /* Footer */
+
+  .bottom-footer{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    border-bottom: 2px solid #1fc4c4!important;
+}
+
+.row{
+    padding-top: 20px;
+}
+
+.company-footer{
+    display: flex;
+     flex-direction: column; 
+    width: 25rem;
+}
+.links-footer{
+    display: flex;
+     flex-direction: column; 
+    width: 25rem;
+}
+.contact-footer{
+    display: flex;
+     flex-direction: column;
+    width: 25rem;
+}
+
+.contact h2 {
+    color: #006084;
+}
+
+
+.copy-right{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 25px 30px;
+
+}
+
+.copy-right p {
+    padding: 5px;
+}
+
+.copy-right i {
+    color: #006084;
+}
+
+.network{
+    text-align: center;
+}
+
+  /* X Footer X */
+ 
+
 /* Viewport mobile */
+
+@media(min-width:2301px){
+    #sw div{
+        width: 560px !important;
+    }
+}
+
+@media (min-width:2071px) and (max-width:2300px){
+    #sw div{
+        width: 540px !important;
+    }
+}
+
+@media (min-width:1901px) and (max-width:2070px){
+    #sw div{
+        width: 520px !important;
+    }
+}
+
+@media (min-width:1751px) and (max-width:1900px){
+    #sw div{
+        width: 500px !important;
+    }
+}
+
+@media (min-width:1601px) and (max-width:1750px){
+    #sw div{
+        width: 480px !important;
+    }
+}
 
 @media (min-width:1451px) and (max-width:1600px){
     #sw div{
-        width: 440px !important;
+        width: 470px !important;
     }
 }
 
 @media (min-width:1301px) and (max-width:1450px){
     #sw div{
-        width: 420px !important;
+        width: 450px !important;
     }
 }
 
 @media (min-width:1151px) and (max-width:1300px){
     #sw div{
-        width: 400px !important;
+        width: 430px !important;
     }
 }
 
 @media (min-width:975px) and (max-width:1150px){
     #sw div{
-        width: 380px !important;
+        width: 410px !important;
     }
 }
 
 
 @media (min-width:900px) and (max-width:974px){
     #sw div{
+        width: 400px !important;
+    }
+}
+
+@media (min-width:750px) and (max-width:899px){
+    #sw div{
+        width: 390px !important;
+    }
+}
+
+@media(min-width:601px) and (max-width:749px){
+    #sw div{
         width: 370px !important;
-    }
-}
-
-@media (min-width:720px) and (max-width:899px){
-    #sw div{
-        width: 350px !important;
-    }
-}
-
-@media(min-width:601px) and (max-width:719px){
-    #sw div{
-        width: 320px !important;
     }
 }
 
@@ -480,8 +712,12 @@ background-size: cover;
         display: initial;
     }
 
+    .nav{
+        height: 0rem;
+    }
+
     .myItem{
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     .bio-flex{
@@ -499,8 +735,17 @@ background-size: cover;
     }
 
     #sw div{
-        width: 310px !important;
+        width: 340px !important;
     }
   
+    .copy-right p{
+        text-align: center;
+    }
+    .copy-right .network{
+        padding: 10px;
+    }
+    .copy-right{
+        flex-direction: column;
+    }
 }
 
