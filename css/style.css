@@ -11,9 +11,7 @@ a{
     text-decoration: none;
 }
 
-h1{
-    font-family: "Open Sans"!important;
-}
+
 
 
 /* -----------Navbar------------ */
@@ -103,8 +101,9 @@ background-size: cover;
     width: 100%; 
   }
 
-.myItem{
-    padding-top: 15px;
+.nav .myItem{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
   
@@ -131,7 +130,8 @@ background-size: cover;
 }
 
 .title h1{
-    font-family: initial;
+    /* font-family: initial; */
+    font-family: "Open Sans"!important;
     font-size: 60px!important;
 }
 
@@ -145,6 +145,13 @@ background-size: cover;
 
 .bio-title{
     text-align: center;
+    color: #006084;
+    
+}
+
+.bio-title h1{
+    font: bold;
+    font-size: 45px!important;
 }
 
 .bio-title hr{
@@ -530,6 +537,7 @@ background-size: cover;
   .certificate{
       height: auto;
       margin-top: 50px;
+      margin-bottom: 50px;
   }
 
 
@@ -713,11 +721,13 @@ background-size: cover;
     }
 
     .nav{
-        height: 0rem;
+        height: 2rem;
     }
 
     .myItem{
         padding-top: 20px;
+            margin: 0;
+        
     }
 
     .bio-flex{
