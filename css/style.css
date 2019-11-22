@@ -212,12 +212,12 @@ background-size: cover;
 }
 
 .bio-content #moreIcon{
-    background-image: url('../assets/procitaj.svg');
-    width: 30px;
-    height: 30px;
+    background-image: url('../assets/moreIcone.svg');
+    width: 48px;
+    height: 40px;
     background-position: center;
     background-size: cover;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .bio-content #moreText{
