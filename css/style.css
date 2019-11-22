@@ -38,6 +38,8 @@ a{
     margin: 0;
 }
 
+
+
 .nav .nav-items .nav-link{
     padding: 1rem 1rem;
     font-size: 1.5rem;
@@ -60,9 +62,9 @@ a{
 }
 
 .nav .nav-brand{
-    width: 90px;
-    height: 60px;
-background-image: url('../assets/LogoPolex.png');
+    width: 50px;
+    height: 50px;
+background-image: url('../assets/Logo-znak-only.png');
 background-position: center;
 background-size: cover;
 }
@@ -71,10 +73,10 @@ background-size: cover;
 
 .nav .nav-items .nav-link a{
     transition-duration: 0.2s ;
+    color: #004467;
+    font-size: 17px;
 }
-.nav .nav-items .nav-link a:hover{
-    font-size: 1.5rem;
-}
+
 
 .nav .toggle-collapse{
     position: absolute;
@@ -150,11 +152,11 @@ background-size: cover;
 }
 
 .bio-title h1{
-    font: bold;
-    font-size: 45px!important;
+    font: Bold 60px Open Sans;
+    padding-left: 30px;
 }
 
-.bio-title hr{
+.biography hr{
     margin: 16px 0 16px;
     border: 2px solid #1fc4c4;
 }
@@ -198,6 +200,11 @@ background-size: cover;
     background-size: cover;
 }
 
+.bio-image p{
+    font-size: 17px;
+    color: #004467;
+}
+
 .more{
     display: flex;
     flex-direction: row;
@@ -216,17 +223,26 @@ background-size: cover;
 .bio-content #moreText{
     margin-top: 27px;
     padding-left: 20px;
-    font-size: 26px;
-    font-family: 'Open Sans';
+    font: bold 26px 'Open Sans';
+    color: #004467;
+    
 }
 
 .bio-content #moreText:hover{
     cursor: pointer;
-    color: cornflowerblue;
+   
 }
 
 #bio-modal p{
     margin: 30px 20px;
+}
+.bio-image #spec{
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.bio-image #name{
+    font-size: 20px;
 }
 
 
@@ -239,6 +255,19 @@ background-size: cover;
 }
 
 .button {
+    background: transparent linear-gradient(180deg, #1FC4C4 0%, #006084 100%) 0% 0% no-repeat padding-box;;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 180px;
+}
+
+#btn5{
     background: transparent linear-gradient(180deg, #1FC4C4 0%, #006084 100%) 0% 0% no-repeat padding-box;;
     border: none;
     color: white;
@@ -395,6 +424,7 @@ background-size: cover;
     text-align: center;
 }
 
+
 .myPacket h2{
     margin: 30px 0px;
 }
@@ -406,6 +436,18 @@ background-size: cover;
 .packets-list1{
     padding-top: 20px;
     padding-bottom: 40px;
+}
+
+#phone{
+    display: none;
+    color: white;
+    
+}
+
+#phone-div{
+    text-align: center;
+    padding: 10px;
+    height: 150px;
 }
   
 
@@ -630,8 +672,60 @@ background-size: cover;
     color: #006084;
 }
 
-.network{
+#network{
     text-align: center;
+}
+
+
+ 
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myForm h2 {
+    text-align: center;
+    color: #006084;
+}
+
+form input{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #006084;
+    border-radius: 5px;
+}
+
+
+form input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+form textarea:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+form textarea {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #006084;
+    border-radius: 5px;
+}
+
+form button {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #006084;
+    border-radius: 5px;
+    width: 197px ;
+    height: 52px;
+    background: transparent linear-gradient(180deg, #1FC4C4 0%, #006084 100%) 0% 0% no-repeat padding-box;
+}
+
+.error {
+    color:red;
 }
 
   /* X Footer X */
@@ -757,5 +851,32 @@ background-size: cover;
     .copy-right{
         flex-direction: column;
     }
+    .nav .nav-brand{
+    margin-left: 50px;
+}
 }
 
+
+@media (min-height:700px) and (max-height:850px){
+    .nav .nav-menu{
+        padding-top: 10px;
+    }
+}
+
+@media (min-height:851px) and (max-height:1000px){
+    .nav .nav-menu{
+        padding-top: 20px;
+    }
+}
+
+@media (min-height:1001px) and (max-height:1200px){
+    .nav .nav-menu{
+        padding-top: 30px;
+    }
+}
+
+@media (min-height:1201px){
+    .nav .nav-menu{
+        padding-top: 35px;
+    }
+}

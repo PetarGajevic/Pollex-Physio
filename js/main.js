@@ -34,6 +34,18 @@ $(document).ready(function(){
       $('html, body').animate({scrollTop:positiontherapy}, '500', 'swing');
     })
 
+
+    $('li#packetsNav').click(function(){
+      positiontherapy = $('.sec-packets').offset().top - $('.nav-menu').height();
+      $('html, body').animate({scrollTop:positiontherapy}, '500', 'swing');
+    })
+
+    $('li#contactNav').click(function(){
+      positiontherapy = $('.contact').offset().top - $('.nav-menu').height();
+      $('html, body').animate({scrollTop:positiontherapy}, '500', 'swing');
+    })
+
+
     var number = 800;
 
     var swiper = new Swiper('.swiper-container', {
@@ -47,7 +59,8 @@ $(document).ready(function(){
     
       },
     });
-
+   
+    
     
 
 

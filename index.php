@@ -11,13 +11,14 @@
     <script src="./js/Jquery.js"></script>
     <script src="./js/main.js"></script>
 
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/Logo-znak-only.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/hnet.com-image.ico" />
     <meta property="og:image" content="http://pollex.qqriq.me/assets/LogoPolex.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://pollex.qqriq.me/" />
     <!-- Swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
     <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -36,7 +37,7 @@
         
         <div class="top-page">
         <nav class="nav navbar-fixed-top" id="myHeader">
-            <div class="nav-menu flex-row">
+            <div class="nav-menu flex-row ">
                 <div class="nav-brand">
                 <a href="#" class="text-gray"></a>
             </div>
@@ -54,7 +55,7 @@
                 </ul>
             </div>
             </div>
-        </nav>
+          </nav>
         <div class="title">
                 <p>Dragi posjetioci, dobrodosli u</p>
                 <h1>POLLEX PHYSIO</h1>
@@ -66,8 +67,9 @@
     <div class="biography">
         <div class="bio-title">
             <h1>Biografija</h1>
-            <hr>
+            
         </div>
+        <hr>
         <div class="bio-flex">
         <div class="bio-content">
             <p>Postdiplomske specijalističke studije iz neurološke fizioterapije završio
@@ -98,7 +100,7 @@
                     <div id="img"></div>   
                     <!-- <img src="./assets/IMG_0716.jpg"> -->
                         <br>
-                        <p>Aleksandar Brajkovic</p>
+                        <p id="spec">Specijalista fizioterapije</p><p id="name">Aleksandar Brajković</p>
                     </div>    
                    
         </div>
@@ -612,15 +614,15 @@
              <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper" id="sw">
-      <div class="swiper-slide"><img src="./assets/Sertifikat1.png"></div>
-      <div class="swiper-slide"><img src="./assets/Sertifikat2.png"></div>
-      <div class="swiper-slide"><img src="./assets/Sertifikat3.png"></div>
-      <div class="swiper-slide"><img src="./assets/Sertifikat4.png"></div>
-      <div class="swiper-slide"><img src="./assets/Sertifikat5.png"></div>
-      <div class="swiper-slide"><img src="./assets/Sertifikat6.png"></div>
-      <div class="swiper-slide"><img id="img-last" src="./assets/Sertifikat7.png"></div>
-      <div class="swiper-slide"><img id="img-last" src="./assets/Sertifikat8.png"></div>
-      <div class="swiper-slide"><img id="img-last" src="./assets/Sertifikat9.png"></div>
+      <div class="swiper-slide"><img src="./assets/Sertifikat1.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img src="./assets/Sertifikat2.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img src="./assets/Sertifikat3.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img src="./assets/Sertifikat4.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img src="./assets/Sertifikat5.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img src="./assets/Sertifikat6.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img id="img-last" src="./assets/Sertifikat7.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img id="img-last" src="./assets/Sertifikat8.png" onContextMenu="return false;"></div>
+      <div class="swiper-slide"><img id="img-last" src="./assets/Sertifikat9.png" onContextMenu="return false;"></div>
     </div>
    
   </div>
@@ -631,7 +633,9 @@
       <div class="pollex-packets">
         <div class="title-packets"><h1>POLLEX PHYSIO PAKETI</h1></div>
         <div class="packet-wraper">
-        <div class="myPacket">
+
+
+        <div class="myPacket" >
           <div class="img-packet"></div>
           <h2>Family Box</h2>
           <p>4 tretmana terapeutske masaže od 30 min</p>
@@ -648,12 +652,10 @@
             </div>
             <div>
                 <img  src="./assets/check_.svg" alt="">
-             <p> Pojacava cirkulaciju u organizmu</p>
+             <p> Pojačava cirkulaciju u organizmu</p>
              </div>
           </div>
-          <button type="button" class="button" id="btn4">Zakaži</button>
         </div>
-
 
         <div class="myPacket">
             <div class="img-packet1"></div>
@@ -676,7 +678,6 @@
                 <p> Veći napredak mišića</p>
                 </div>
             </div>
-            <button type="button" class="button" id="btn5">Zakaži</button>
           </div>
 
           <div class="myPacket">
@@ -699,12 +700,19 @@
                   <p> Osjećate se odmornije</p>
                   </div>
               </div>
-              <button type="button" class="button" id="btn4">Zakaži</button>
             </div>
 
-
-         
+        
         </div>
+
+         <div  style="text-align: center;" id="phone-div">
+
+             <button type="button"id="btn5" style="margin-bottom: 20px;" onclick="showPhone()">Zakaži</button> 
+             <div id="phone" class="animated slideInDown">Pozovi +382 67 270 793</div>
+           
+        </div> 
+
+        
       </div>
     </section>
 
@@ -717,21 +725,34 @@
         </div>
         <div class="links-footer">
           <h2 style="margin-top: 0;">Korisni linkovi</h2>
-          <p>Link 1</p>
-          <p>Link 2</p>
-          <p>Link 3</p>
+         <!-- Kontakt forma -->
+         <div class="myForm">
+          <h2>Kontakt</h2>
+          <form id="cont">
+            <input type="text" placeholder="Ime i Prezime" name="name1" id="name1">
+            <span class="error"></span>
+            <input type="email" placeholder="Email" name="email" id="email1"  >
+            <span class="error"></span>
+            <textarea name=""  cols="22" rows="4" placeholder="Poruka" id="message1" name="message" ></textarea>
+            <span id="error1"></span>
+            <button type="submit" name="submit" id="submit"> Posalji</button>
+          </form>
+        </div>
+
+
+          <!-- X  Kontakt forma  X  -->
         </div>
         <div class="contact-footer">
             <div class="">
-                <h2 class=" mb-4 font-weight-bold" >Kontakt</h2>
+                <h2 class=" mb-4 font-weight-bold" >Info</h2>
                 <p>
-                  <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                  <i class="fas fa-home mr-3"></i> Vinogradska, Podgorica</p>
                 <p>
-                  <i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                  <i class="fas fa-envelope mr-3"></i> brajkovic93@gmail.com</p>
                 <p>
-                  <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                <p>
-                  <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                  <i class="fas fa-phone mr-3"></i> +382 67 270 793
+                </p>
+            
               </div>
         </div>
       </div>
@@ -750,17 +771,13 @@
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-twitter fa-2x"></i>
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1"  href="https://www.instagram.com/pollexphysio/?igshid=rreu5zj1z67e" target="_blank">
+                      <i class="fab fa-instagram fa-2x"></i>
                     </a>
                   </li>
+                  
                   <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                      <i class="fab fa-google-plus-g fa-2x"></i>
-                    </a>
-                  </li>
-                  <li class="list-inline-item">
-                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.instagram.com/pollexphysio/?igshid=rreu5zj1z67e" target="_blank">
+                    <a class="btn-floating btn-sm rgba-white-slight mx-1" href="https://www.linkedin.com/in/aleksandar-brajković-9a8691118/?..." target="_blank">
                       <i class="fab fa-linkedin-in fa-2x"></i>
                     </a>
                   </li>
@@ -773,6 +790,58 @@
         
     </main>
 
+    <script>
+    function showPhone(){
+      if(document.getElementById("phone").style.display == "block"){
+        document.getElementById("phone").style.display = "none"
+      }else{
+        document.getElementById("phone").style.display = "block";
+      }
+      
+      }
+
+
+      $(document).ready(function(){
+        $('#submit').click(function(){
+          event.preventDefault();
+          $name = $('#name1').val();
+          $email = $('#email1').val();
+          $message = $('#message1').val();
+           console.log($name);
+           console.log($email);
+           console.log($message);
+          $.ajax({
+            dataType: "JSON",
+            url: "sendmail.php",
+            type: "POST",
+            data: {name : $name, email: $email, message: $message},
+            beforeSend: function(xhr){
+
+            },
+            success: function(response){
+              if(response){
+                console.log(response);
+               if(response['signal'] == 'ok'){
+                $('#error1').html('<div class="alert alert-success">'+ response['msg'] + '</div>');
+               }else{
+                $('#error1').html('<div class="alert alert-success">'+ response['msg'] + '</div>');
+               }
+              }else{
+                $('#error1').html('<div class="alert alert-success"> There is error pls try again later</div>');
+               }
+              
+            },
+            error: function(){
+              $('#error1').html('<div class="alert alert-success"> There is error pls try again later</div>');
+            },
+            complete: function(){
+
+            }
+          });
+        });
+      });
+
+      </script>
     <!-- col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 -->
 </body>
 </html>
