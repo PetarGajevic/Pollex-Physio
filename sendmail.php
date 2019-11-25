@@ -30,33 +30,32 @@ $mail->Password = "bnquofzt6gji";
 $mail->Port = 587;
 $mail->SMTPSecure = "tls";
 
-$mail->isHTML(true);
+
+
+
+
+
+if($name != null && $email != null && $message != null){
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        $mail->isHTML(true);
 $mail->setFrom($email);
 $mail->AddAddress("info@pollexphysio.me");
 $mail->Body = $message;
-
-if($mail->send()){
-    $signal = "ok";
-    $msg = "Email is sent";
-}else{
-    $signal = "bad";
-    $msg = "Email is not sent";
-}
-
-
-
-/* if($name != null && $email != null && $message != null){
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
-        $signal = "ok";
-        $msg = "Email is good";
+        if($mail->send()){
+            $signal = "ok";
+            $msg = "Email je poslat";
+        }else{
+            $signal = "bad";
+            $msg = "Email nije poslat";
+        }
       } else {
         $signal = "bad";
-        $msg = "Email doesnt exist";
+        $msg = "Email ne posotji";
       }
 }else{
     $signal = "bad";
-    $msg = "fill in all fields";
-} */
+    $msg = "Morate ispuniti svako polje";
+}
 
     $data = array(
         'signal' => $signal,

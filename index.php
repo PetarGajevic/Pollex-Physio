@@ -11,6 +11,8 @@
     <script src="./js/Jquery.js"></script>
     <script src="./js/main.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
     <link rel="shortcut icon" type="image/x-icon" href="./assets/hnet.com-image.ico" />
     <meta property="og:image" content="http://pollex.qqriq.me/assets/LogoPolex.png" />
     <meta property="og:type" content="website" />
@@ -66,11 +68,16 @@
     <section class="bio-sec">
     <div class="biography">
         <div class="bio-title">
+          <div id="sub-title">
             <h1>Biografija</h1>
-            
         </div>
+        </div>
+        <div id="line">
         <hr>
+</div>
+        <div>
         <div class="bio-flex">
+        
         <div class="bio-content">
             <p>Postdiplomske specijalističke studije iz neurološke fizioterapije završio
                 2016.godine u Igalu (Herceg Novi), na Medicinskom fakultetu (odsjek primijenjena
@@ -707,7 +714,7 @@
 
          <div  style="text-align: center;" id="phone-div">
 
-             <button type="button"id="btn5" style="margin-bottom: 20px;" onclick="showPhone()">Zakaži</button> 
+             <button type="button"id="btn5"  onclick="showPhone()">Zakaži</button> 
              <div id="phone" class="animated slideInDown">Pozovi +382 67 270 793</div>
            
         </div> 
@@ -724,7 +731,7 @@
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
         </div>
         <div class="links-footer">
-          <h2 style="margin-top: 0;">Korisni linkovi</h2>
+          
          <!-- Kontakt forma -->
          <div class="myForm">
           <h2>Kontakt</h2>
@@ -807,22 +814,19 @@
           $name = $('#name1').val();
           $email = $('#email1').val();
           $message = $('#message1').val();
-           console.log($name);
-           console.log($email);
-           console.log($message);
           $.ajax({
             dataType: "JSON",
             url: "sendmail.php",
             type: "POST",
             data: {name : $name, email: $email, message: $message},
             beforeSend: function(xhr){
-
+              $('#submit').html("Slanje...");
             },
             success: function(response){
               if(response){
-                console.log(response);
                if(response['signal'] == 'ok'){
                 $('#error1').html('<div class="alert alert-success">'+ response['msg'] + '</div>');
+                
                }else{
                 $('#error1').html('<div class="alert alert-success">'+ response['msg'] + '</div>');
                }
@@ -835,7 +839,7 @@
               $('#error1').html('<div class="alert alert-success"> There is error pls try again later</div>');
             },
             complete: function(){
-
+              $('#submit').html("Posalji");
             }
           });
         });
