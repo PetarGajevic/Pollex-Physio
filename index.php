@@ -11,6 +11,9 @@
     <script src="./js/Jquery.js"></script>
     <script src="./js/main.js"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
     <link rel="shortcut icon" type="image/x-icon" href="./assets/hnet.com-image.ico" />
@@ -59,15 +62,16 @@
             </div>
           </nav>
         <div class="title">
-                <p>Dragi posjetioci, dobrodosli u</p>
-                <h1>POLLEX PHYSIO</h1>
+                <p data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">Dragi posjetioci, dobrodosli u</p>
+                <h1 class="animated fadeIn">POLLEX PHYSIO</h1>
         </div>
     
         
     </div>
     <section class="bio-sec">
     <div class="biography">
-        <div class="bio-title">
+    <div class="bio-title">
           <div id="sub-title">
             <h1>Biografija</h1>
         </div>
@@ -78,7 +82,8 @@
         <div>
         <div class="bio-flex">
         
-        <div class="bio-content">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="bio-content">
             <p>Postdiplomske specijalističke studije iz neurološke fizioterapije završio
                 2016.godine u Igalu (Herceg Novi), na Medicinskom fakultetu (odsjek primijenjena
                 fizioterapija) na temu: ,,Fizioterapija kod paralize nervus facijalisa’’.Diplomirao na
@@ -103,7 +108,8 @@
                         <p id="moreText">Pročitaj</p>
                     </div>   
                 </div>
-                <div class="bio-image">
+                <div class="bio-image" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom">
                     <div id="img"></div>   
                     <!-- <img src="./assets/IMG_0716.jpg"> -->
                         <br>
@@ -168,8 +174,9 @@
 
     <section class="therapy-sec">
         <div class="pollex-therapy">
-            <div class="card-wraper">
-            <div class="myCard">
+            <div data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" class="card-wraper">
+            <div class="myCard"  data-aos="fade-up">
                 <h2>Kineziterapija</h2>
                 <br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -194,7 +201,7 @@
                 <div class="card">
             
                 <!-- Card header -->
-                <div class="card-header" role="tab" id="headingTwo2">
+                <div class="card-header" id="box1" role="tab" id="headingTwo2">
                     <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
                     aria-expanded="false" aria-controls="collapseTwo2">
                     <h5 class="mb-0">
@@ -204,13 +211,26 @@
                 </div>
             
                 <!-- Card body -->
-                <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                <div id="collapseTwo2" class="collapse " role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+                
+                      <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
+                      
                     <div class="card-body">
-                        <p> Rehabilitacija povreda mišića (kontuzije,istegnuća,rupture)</p>
-                        <p>Rehabilitacija povreda ligamenata (istegnuća,rupture)</p>
-                            <p>Rehabilitacija povreda tetiva (upale,istegnuća,rupture)</p>
-                                <p>Preoperativna priprema I postoperativna rehabilitacija sportskih povreda</p>
-                                    <p>Rehabilitacija usled instabiliteta zglobova,poremećaja balansa I koordinacije</p>
+                        <p id="text">Rehabilitacija povreda mišića </p>
+                        <p>  (kontuzije,istegnuća,rupture)</p>
+                        <p id="text">Rehabilitacija povreda ligamenata </p>
+                          <p>(istegnuća,rupture)</p>
+                        <p id="text">Rehabilitacija povreda tetiva </p>
+                          <p>(upale,istegnuća,rupture)</p>
+                        <p id="text">Preoperativna priprema I postoperativna </p>
+                         <p id="text1"> rehabilitacija sportskih povreda</p>
+                        <p id="text">Rehabilitacija usled instabiliteta zglobova,</p>
+                          <p id="text1"> poremećaja balansa I koordinacije</p>
+                    </div>
+
                     </div>
                 </div>
             
@@ -232,14 +252,24 @@
             
                 <!-- Card body -->
                 <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+                <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
                     <div class="card-body">
-                        <p> Rehabilitacija Moždanog udara (Ishemijski I hemoragijski)</p>
-                        <p>Rehabilitacija Multipleskleroze I Parkinsonove bolesti</p>
-                        <p> Rehabilitacija Kvadripareze,Kvadriplegije,Parapareze I Paraplegije</p>
-                        <p> Rehabilitacija povreda Plexus brachialis-a (ulnaris,redialis,medianus)</p>
-                        <p>Rehabilitacija povreda Plexus lumbosacralis-a ( peroneus, tibialis)</p>
-                        <p>Rehabilitacija Discus herniae (cervikalna lokalizacija, lumbalna lokalizacija</p>
-                        <p>Rehabilitacija mišićnih distrofija (Duchennova, Becherova)</p>
+                        <p id="text"> Rehabilitacija Moždanog udara</p>
+                         <p> (Ishemijski I hemoragijski)</p>
+                        <p id="text" class="pad">Rehabilitacija Multipleskleroze I Parkinsonove bolesti</p>
+                        <p id="text" class="pad"> Rehabilitacija Kvadripareze,Kvadriplegije,Parapareze I Paraplegije</p>
+                        <p id="text"> Rehabilitacija povreda Plexus brachialis-a</p>
+                        <p> (ulnaris,redialis,medianus)</p>
+                        <p id="text">Rehabilitacija povreda Plexus lumbosacralis-a</p>
+                        <p> ( peroneus, tibialis)</p>
+                        <p id="text">Rehabilitacija Discus herniae</p>
+                        <p> (cervikalna lokalizacija, lumbalna lokalizacija</p>
+                        <p id="text">Rehabilitacija mišićnih distrofija</p>
+                        <p> (Duchennova, Becherova)</p>
+                    </div>
                     </div>
                 </div>
             
@@ -261,13 +291,19 @@
                     
                         <!-- Card body -->
                         <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4" data-parent="#accordionEx">
+                        <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
                         <div class="card-body">
-                            <p>Postoperativna rehabilitacija preloma I naprsnuća kostiju</p>
-                            <p>Postopertivna rehabilitacija Endoproteza kuka, koljena,ramena I lakta</p>
-                            <p>Postoperativna rehabilitacija nakon amputacije ekstremiteta</p>
-                            <p>Postoperativna rehabilitacija nakon diskus hernije (cervikalna I lumbalna)</p>
+                            <p id="text" class="pad">Postoperativna rehabilitacija preloma I naprsnuća kostiju</p>
+                            <p id="text" class="pad">Postopertivna rehabilitacija Endoproteza kuka, koljena,ramena I lakta</p>
+                            <p id="text" class="pad">Postoperativna rehabilitacija nakon amputacije ekstremiteta</p>
+                            <p id="text">Postoperativna rehabilitacija nakon diskus hernije</p>
+                            <p> (cervikalna I lumbalna)</p>
                         </div>
                         </div>
+                    </div>
                     
                     </div>
                     <!-- Accordion card -->
@@ -287,25 +323,32 @@
                     
                         <!-- Card body -->
                         <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordionEx">
+                        <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
                         <div class="card-body">
-                            <p> Cervikalnog (vratnog) bolnog sindroma</p>
-                            <p> Rehabilitacija Lumbalnog (donja ledja) nespecifičnog bolnog sindroma</p>
-                            <p>Rehabilitacija deformiteta kičmenog stuba (lordoza,kifoza,skolioza)</p>
-                            <p> Rehabilitacija reumatoloških bolesti (zapaljenske I degenerativne):</p>
-                            <p> - Reumatoidni artritis (RA)</p>
-                            <p> - Ankilozirajući spondylitis (Morbus Behterew)</p>
-                            <p> - Fibromijalgija</p>
-                            <p> - Koksartroza I Gonartroza</p>
-                            <p> - Epycondilitis (teniski I golferski lakat)</p>
-                            <p> Rehabilitacija bolnog ramena (Periarthritis humeroscapularis)</p>
-                            <p> Rehabilitacija Osteoporoze</p>
-                            <p> Rehabilitacija KRBS (kompleksni regionalni bolni sindrom)</p>
-                            <p> Specijalni program vježbi:</p>
-                            <p> - Škola leđa (Institut Igalo)</p>
-                            <p> - Williamsove I McKenzijeve vježbe za lumbalnu kičmu</p>
+                            <p id="text" class="pad"> Cervikalnog (vratnog) bolnog sindroma.</p>
+                            <p id="text" class="pad"> Rehabilitacija Lumbalnog (donja ledja) nespecifičnog bolnog sindroma.</p>
+                            <p id="text">Rehabilitacija deformiteta kičmenog stuba.</p>
+                            <p> (lordoza,kifoza,skolioza)</p>
+                            <p id=text class="pad"> Rehabilitacija reumatoloških bolesti (zapaljenske I degenerativne):</p>
+                            <p> - Reumatoidni artritis (RA).</p>
+                            <p> - Ankilozirajući spondylitis (Morbus Behterew).</p>
+                            <p> - Fibromijalgija.</p>
+                            <p> - Koksartroza I Gonartroza.</p>
+                            <p> - Epycondilitis (teniski I golferski lakat).</p>
+                            <p id="text"> Rehabilitacija bolnog ramena</p>
+                            <p> (Periarthritis humeroscapularis).</p>
+                            <p id="text" class="pad"> Rehabilitacija Osteoporoze.</p>
+                            <p id="text"> Rehabilitacija KRBS</p>
+                            <p> (kompleksni regionalni bolni sindrom).</p>
+                            <p id="text" class="pad"> Specijalni program vježbi:</p>
+                            <p> - Škola leđa (Institut Igalo).</p>
+                            <p> - Williamsove I McKenzijeve vježbe za lumbalnu kičmu.</p>
                         </div>
                         </div>
-                    
+                    </div>
                     </div>
                     <!-- Accordion card -->
                     
@@ -315,7 +358,7 @@
             </div>
           
           </div>
-            <div class="myCard">
+            <div class="myCard"  data-aos="fade-up">
                 <h2>Elektroterapija</h2>
                 <br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -355,12 +398,17 @@
   
       <!-- Card body -->
       <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="headingSix6" data-parent="#accordionEx">
+      <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
         <div class="card-body">
                 <p> TECARE terapija</p>
                 <p> HIL Laser visokog inteziteta</p>
                 <p> Terapijski UZ (utrazvuk)</p>
         </div>
       </div>
+                    </div>
   
     </div>
     <!-- Accordion card -->
@@ -380,12 +428,17 @@
   
       <!-- Card body -->
       <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="headingSeven7" data-parent="#accordionEx">
+      <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
         <div class="card-body">
                 <p> TENS (transkutana elektromišićna nervna stimulacija)</p>
                 <p> GALVANSKA STRUJA</p>
                 <p> ELEKTROSTIMULACIJA</p>
         </div>
       </div>
+                    </div>
   
     </div>
     <!-- Accordion card -->
@@ -405,10 +458,15 @@
         
             <!-- Card body -->
             <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="headingEight8" data-parent="#accordionEx">
+            <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
               <div class="card-body">
                     <p> MAGNETNA TERAPIJA (niskofrekfentno magnetno polje)</p>
               </div>
             </div>
+                    </div>
         
           </div>
           <!-- Accordion card -->
@@ -428,11 +486,15 @@
         
             <!-- Card body -->
             <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="headingNine9" data-parent="#accordionEx">
+            <div id="flex"> 
+                        <div class="card-image">
+
+                        </div>
               <div class="card-body">
                     <p> Perkusiona terapija masažnim pištoljem (2400 udara/min)</p>
               </div>
             </div>
-        
+                    </div>
           </div>
           <!-- Accordion card -->
         
@@ -443,7 +505,7 @@
             </div>
           
           </div>
-            <div class="myCard">
+            <div class="myCard"  data-aos="fade-up">
                 <h2>Manuelna terapija</h2>
                 <br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -587,7 +649,7 @@
             </div>
             </div>
           </div>
-            <div class="myCard">
+            <div class="myCard"  data-aos="fade-up">
                 <h2>Patronazna terapija</h2>
                 <br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
@@ -619,7 +681,7 @@
     <section>
         <div class="certificate">
              <!-- Swiper -->
-  <div class="swiper-container">
+  <div class="swiper-container" data-aos="fade-up">
     <div class="swiper-wrapper" id="sw">
       <div class="swiper-slide"><img src="./assets/Sertifikat1.png" onContextMenu="return false;"></div>
       <div class="swiper-slide"><img src="./assets/Sertifikat2.png" onContextMenu="return false;"></div>
@@ -638,12 +700,12 @@
 
     <section class="sec-packets">
       <div class="pollex-packets">
-        <div class="title-packets"><h1>POLLEX PHYSIO PAKETI</h1></div>
+        <div class="title-packets"  data-aos="fade-up"><h1>POLLEX PHYSIO PAKETI</h1></div>
         <div class="packet-wraper">
 
 
-        <div class="myPacket" >
-          <div class="img-packet"></div>
+        <div class="myPacket"  data-aos="fade-up">
+          <div class="img-packet" ></div>
           <h2>Family Box</h2>
           <p>4 tretmana terapeutske masaže od 30 min</p>
           <p>4 tretmana spinalne manipulacije kičmenog stuba</p>
@@ -664,8 +726,8 @@
           </div>
         </div>
 
-        <div class="myPacket">
-            <div class="img-packet1"></div>
+        <div class="myPacket"  data-aos="fade-up">
+            <div class="img-packet1" ></div>
             <h2>Sport Recovery Box</h2>
             <p>1 tretmana sportske masaže od 30 min</p>
             <p>1 tretman dijatermije Tcare terapije</p>
@@ -687,8 +749,8 @@
             </div>
           </div>
 
-          <div class="myPacket">
-              <div class="img-packet2"></div>
+          <div class="myPacket"  data-aos="fade-up">
+              <div class="img-packet2" ></div>
               <h2>Relax Business Box</h2>
               <p>2 tretmana terapeutske masaže od 30 min</p>
                <p>1 tretman YUMEIHO akupresure</p>
@@ -725,7 +787,7 @@
 
     <section class="contact">
       <div class="bottom-footer">
-        <div class="company-footer">
+        <div class="company-footer" data-aos="fade-up">
           <h2>Pollex Physio</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -733,7 +795,7 @@
         <div class="links-footer">
           
          <!-- Kontakt forma -->
-         <div class="myForm">
+         <div class="myForm" data-aos="fade-up">
           <h2>Kontakt</h2>
           <form id="cont">
             <input type="text" placeholder="Ime i Prezime" name="name1" id="name1">
@@ -742,14 +804,14 @@
             <span class="error"></span>
             <textarea name=""  cols="22" rows="4" placeholder="Poruka" id="message1" name="message" ></textarea>
             <span id="error1"></span>
-            <button type="submit" name="submit" id="submit"> Posalji</button>
+            <button class="button" type="submit" name="submit" id="submit"> Posalji</button>
           </form>
         </div>
 
 
           <!-- X  Kontakt forma  X  -->
         </div>
-        <div class="contact-footer">
+        <div class="contact-footer" data-aos="fade-up">
             <div class="">
                 <h2 class=" mb-4 font-weight-bold" >Info</h2>
                 <p>
@@ -807,6 +869,7 @@
       
       }
 
+      AOS.init();
 
       $(document).ready(function(){
         $('#submit').click(function(){
@@ -821,25 +884,31 @@
             data: {name : $name, email: $email, message: $message},
             beforeSend: function(xhr){
               $('#submit').html("Slanje...");
+              $("#submit").prop('disabled', true);
             },
             success: function(response){
               if(response){
                if(response['signal'] == 'ok'){
                 $('#error1').html('<div class="alert alert-success">'+ response['msg'] + '</div>');
+                $("#cont")[0].reset();
                 
                }else{
-                $('#error1').html('<div class="alert alert-success">'+ response['msg'] + '</div>');
+                $('#error1').html('<div class="alert alert-danger">'+ response['msg'] + '</div>');
                }
               }else{
-                $('#error1').html('<div class="alert alert-success"> There is error pls try again later</div>');
+                $('#error1').html('<div class="alert alert-danger"> Doslo je do greske pokusajte ponovo</div>');
                }
               
             },
             error: function(){
-              $('#error1').html('<div class="alert alert-success"> There is error pls try again later</div>');
+              $('#error1').html('<div class="alert alert-danger"> Doslo je do greske pokusajte ponovo</div>');
             },
             complete: function(){
               $('#submit').html("Posalji");
+              $("#submit").prop('disabled', false);
+              $(".alert-success").fadeTo(2000, 500).slideUp(500, function() {
+               $(".alert-success").slideUp(500);
+    });
             }
           });
         });

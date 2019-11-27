@@ -38,9 +38,9 @@ $mail->SMTPSecure = "tls";
 if($name != null && $email != null && $message != null){
     if (!filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
         $mail->isHTML(true);
-$mail->setFrom($email);
-$mail->AddAddress("info@pollexphysio.me");
-$mail->Body = $message;
+        $mail->setFrom($email);
+        $mail->AddAddress("info@pollexphysio.me");
+        $mail->Body = $message;
         if($mail->send()){
             $signal = "ok";
             $msg = "Email je poslat";
@@ -50,7 +50,7 @@ $mail->Body = $message;
         }
       } else {
         $signal = "bad";
-        $msg = "Email ne posotji";
+        $msg = "Morate unijeti vas Email";
       }
 }else{
     $signal = "bad";

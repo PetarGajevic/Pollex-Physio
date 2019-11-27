@@ -94,10 +94,12 @@ $(document).ready(function(){
       var modal1 = document.getElementById("myModal1");
       var btn1 = document.getElementById("btn1");
       var span1 = document.getElementsByClassName("close1")[0];
+      var modalContent = document.getElementsByClassName("modal-content");
       btn1.onclick = function() {
         modal1.style.display = "block";
-        document.getElementById('htmls').style.overflow = "hidden ";
+        // modalContent.style.max-height = "calc(100vh - 210px)"; 
 
+        document.getElementById('htmls').style.overflow = "hidden ";
       }
       span1.onclick = function() {
         modal1.style.display = "none";
