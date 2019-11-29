@@ -38,6 +38,556 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
+   <!-- KineziTerpaija -->
+   <div class="modal" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">KINEZITERPAIJA</h4>
+          <button type="button" id="close1" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <!--Accordion wrapper-->
+
+           <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+            
+<!-- Accordion card -->
+<div class="card">
+
+<!-- Card header -->
+<div class="card-header" id="box1" role="tab" id="headingTwo2">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+    aria-expanded="false" aria-controls="collapseTwo2">
+    <h5 class="mb-0">
+        SPORTSKA FIZIOTERAPIJA <i class="fas fa-angle-down rotate-icon"></i>
+    </h5>
+    </a>
+</div>
+
+<!-- Card body -->
+<div id="collapseTwo2" class="collapse " role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
+
+      <div id="flex"> 
+        <div class="card-image">
+
+        </div>
+      
+    <div class="card-body">
+        <p id="text">Rehabilitacija povreda mišica </p>
+        <p>  (kontuzije,istegnuca,rupture)</p>
+        <p id="text">Rehabilitacija povreda ligamenata </p>
+          <p>(istegnuca,rupture)</p>
+        <p id="text">Rehabilitacija povreda tetiva </p>
+          <p>(upale,istegnuca,rupture)</p>
+        <p id="text">Preoperativna priprema I postoperativna </p>
+         <p id="text1"> rehabilitacija sportskih povreda</p>
+        <p id="text">Rehabilitacija usled instabiliteta zglobova,</p>
+          <p id="text1"> poremecaja balansa I koordinacije</p>
+    </div>
+
+    </div>
+</div>
+
+</div>
+<!-- Accordion card -->
+
+<!-- Accordion card -->
+<div class="card">
+ 
+<!-- Card header -->
+<div class="card-header" role="tab" id="headingThree3">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+    aria-expanded="false" aria-controls="collapseThree3">
+    <h5 class="mb-0">
+        NEUROLOŠKA FIZIOTERAPIJA <i class="fas fa-angle-down rotate-icon"></i>
+    </h5>
+    </a>
+</div>
+
+<!-- Card body -->
+<div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
+<div id="flex"> 
+        <div class="card-image">
+
+        </div>
+    <div class="card-body">
+        <p id="text"> Rehabilitacija Moždanog udara</p>
+         <p> (Ishemijski I hemoragijski)</p>
+        <p id="text" class="pad">Rehabilitacija Multipleskleroze I Parkinsonove bolesti</p>
+        <p id="text" class="pad"> Rehabilitacija Kvadripareze, Kvadriplegije, Parapareze I Paraplegije</p>
+        <p id="text"> Rehabilitacija povreda Plexus brachialis-a</p>
+        <p> (ulnaris,redialis,medianus)</p>
+        <p id="text">Rehabilitacija povreda Plexus lumbosacralis-a</p>
+        <p> ( peroneus, tibialis)</p>
+        <p id="text">Rehabilitacija Discus herniae</p>
+        <p> (cervikalna lokalizacija, lumbalna lokalizacija</p>
+        <p id="text">Rehabilitacija mišicnih distrofija</p>
+        <p> (Duchennova, Becherova)</p>
+    </div>
+    </div>
+</div>
+
+</div>
+<!-- Accordion card -->
+
+<!-- Accordion card -->
+<div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingFour4">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
+            aria-expanded="false" aria-controls="collapseThree3">
+            <h5 class="mb-0">
+                ORTOPEDSKA FIZIOTERAPIJA <i class="fas fa-angle-down rotate-icon"></i>
+            </h5>
+        </a>
+        </div>
+    
+        <!-- Card body -->
+        <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4" data-parent="#accordionEx">
+        <div id="flex"> 
+        <div class="card-image">
+
+        </div>
+        <div class="card-body">
+            <p id="text" class="pad">Postoperativna rehabilitacija preloma I naprsnuca kostiju</p>
+            <p id="text" class="pad">Postopertivna rehabilitacija Endoproteza kuka, koljena,ramena I lakta</p>
+            <p id="text" class="pad">Postoperativna rehabilitacija nakon amputacije ekstremiteta</p>
+            <p id="text">Postoperativna rehabilitacija nakon diskus hernije</p>
+            <p> (cervikalna I lumbalna)</p>
+        </div>
+        </div>
+    </div>
+    
+    </div>
+    <!-- Accordion card -->
+    
+    <!-- Accordion card -->
+<div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingFive5">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
+            aria-expanded="false" aria-controls="collapseFive5">
+            <h5 class="mb-0">
+                MUSKULOSKELETNA FIZIOTERAPIJA <i class="fas fa-angle-down rotate-icon"></i>
+            </h5>
+        </a>
+        </div>
+    
+        <!-- Card body -->
+        <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordionEx">
+        <div id="flex"> 
+        <div class="card-image">
+
+        </div>
+        <div class="card-body">
+            <p id="text" class="pad"> Cervikalnog (vratnog) bolnog sindroma.</p>
+            <p id="text" class="pad"> Rehabilitacija Lumbalnog (donja ledja) nespecificnog bolnog sindroma.</p>
+            <p id="text">Rehabilitacija deformiteta kicmenog stuba.</p>
+            <p> (lordoza,kifoza,skolioza)</p>
+            <p id=text class="pad"> Rehabilitacija reumatoloških bolesti (zapaljenske I degenerativne):</p>
+            <p id="categ"> - Reumatoidni artritis (RA).</p>
+            <p id="categ"> - Ankilozirajuci spondylitis (Morbus Behterew).</p>
+            <p id="categ"> - Fibromijalgija.</p>
+            <p id="categ"> - Koksartroza I Gonartroza.</p>
+            <p> - Epycondilitis (teniski I golferski lakat).</p>
+            <p id="text"> Rehabilitacija bolnog ramena</p>
+            <p> (Periarthritis humeroscapularis).</p>
+            <p id="text" class="pad"> Rehabilitacija Osteoporoze.</p>
+            <p id="text"> Rehabilitacija KRBS</p>
+            <p> (kompleksni regionalni bolni sindrom).</p>
+            <p id="text" class="pad"> Specijalni program vježbi:</p>
+            <p id="categ"> - Škola leda (Institut Igalo).</p>
+            <p id="categ"> - Williamsove I McKenzijeve vježbe za lumbalnu kicmu.</p>
+        </div>
+        </div>
+    </div>
+    </div>
+    <!-- Accordion card -->
+    
+
+</div>
+<!-- Accordion wrapper -->
+        </div>
+        
+        
+                    </div>
+      </div>
+    </div>
+    <!-- X Kineziterapija X -->
+
+       <!-- Elektroterapija -->
+                  
+
+
+       <div class="modal" id="myModal2">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">ELEKTROTERAPIJA</h4>
+          <button type="button" id="close2" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         <!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+   
+   
+   
+ 
+  
+<!-- Accordion card -->
+<div class="card">
+
+  <!-- Card header -->
+  <div class="card-header" role="tab" id="headingSix6">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSix6"
+      aria-expanded="false" aria-controls="collapseSix6">
+      <h5 class="mb-0">
+        POLYTER EVO UREÐAJ <i class="fas fa-angle-down rotate-icon"></i>
+      </h5>
+    </a>
+  </div>
+
+  <!-- Card body -->
+  <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="headingSix6" data-parent="#accordionEx">
+  <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+    <div class="card-body">
+            <p id="text" class="pad"> TECARE terapija</p>
+            <p id="text" class="pad"> HIL Laser visokog inteziteta</p>
+            <p id="text" > Terapijski UZ </p>
+            <p>(utrazvuk)</p>
+    </div>
+  </div>
+                </div>
+
+</div>
+<!-- Accordion card -->
+
+<!-- Accordion card -->
+<div class="card">
+
+  <!-- Card header -->
+  <div class="card-header" role="tab" id="headingSeven7">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSeven7"
+      aria-expanded="false" aria-controls="collapseSeven7">
+      <h5 class="mb-0">
+        ELECTRODESIGN MEDICAL COMBI UREÐAJ<i class="fas fa-angle-down rotate-icon"></i>
+      </h5>
+    </a>
+  </div>
+
+  <!-- Card body -->
+  <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="headingSeven7" data-parent="#accordionEx">
+  <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+    <div class="card-body">
+            <p id="text"> TENS</p>
+            <p> (transkutana elektromišicna nervna stimulacija)</p>
+            <p id="text" class="pad"> GALVANSKA STRUJA</p>
+            <p id="text" class="pad"> ELEKTROSTIMULACIJA</p>
+    </div>
+  </div>
+                </div>
+
+</div>
+<!-- Accordion card -->
+
+ <!-- Accordion card -->
+ <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingEight8">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseEight8"
+            aria-expanded="false" aria-controls="collapseEight8">
+            <h5 class="mb-0">
+                ELECTRODESIGN MEDICAL MAGNETHOTHERAPY UREÐAJ<i class="fas fa-angle-down rotate-icon"></i>
+            </h5>
+          </a>
+        </div>
+    
+        <!-- Card body -->
+        <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="headingEight8" data-parent="#accordionEx">
+        <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+          <div class="card-body">
+                <p id="text"> MAGNETNA TERAPIJA</p>
+                <p> (niskofrekfentno magnetno polje)</p>
+          </div>
+        </div>
+                </div>
+    
+      </div>
+      <!-- Accordion card -->
+    
+       <!-- Accordion card -->
+<div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingNine9">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseNine9"
+            aria-expanded="false" aria-controls="collapseNine9">
+            <h5 class="mb-0">
+                THERAGUN G3 PRO UREÐAJ  <i class="fas fa-angle-down rotate-icon"></i>
+            </h5>
+          </a>
+        </div>
+    
+        <!-- Card body -->
+        <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="headingNine9" data-parent="#accordionEx">
+        <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+          <div class="card-body">
+                <p id="text"> Perkusiona terapija masažnim pištoljem</p>
+                <p> (2400 udara/min)</p>
+          </div>
+        </div>
+                </div>
+      </div>
+      <!-- Accordion card -->
+    
+
+
+      
+      
+      </div>
+        </div>
+        
+       
+                    </div>
+      </div>
+    </div>
+  
+                      <!-- X Elektroterapija X -->
+
+                         <!-- Manuelna terapija -->
+                  
+
+
+       <div class="modal" id="myModal3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">MANUELNA TERAPIJA</h4>
+          <button type="button" id="close3" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+           <!--Accordion wrapper-->
+<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+
+   
+   
+   
+ 
+  
+<!-- Accordion card -->
+<div class="card">
+
+  <!-- Card header -->
+  <div class="card-header" role="tab" id="headingTen10">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTen10"
+      aria-expanded="false" aria-controls="collapseTen10">
+      <h5 class="mb-0">
+            MANUELNA MASAŽA: <i class="fas fa-angle-down rotate-icon"></i>
+      </h5>
+    </a>
+  </div>
+
+  <!-- Card body -->
+  <div id="collapseTen10" class="collapse" role="tabpanel" aria-labelledby="headingTen10" data-parent="#accordionEx">
+  <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+    <div class="card-body">
+            <p id="text1">Terapeutska Švedska masaža</p>
+            <p id="text1"> Sportska masaža</p>
+            <p id="text1">Limfna drenaža</p>
+    </div>
+</div>
+  </div>
+
+</div>
+<!-- Accordion card -->
+
+<!-- Accordion card -->
+<div class="card">
+
+  <!-- Card header -->
+  <div class="card-header" role="tab" id="headingEleven11">
+    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseEleven11"
+      aria-expanded="false" aria-controls="collapseEleven11">
+      <h5 class="mb-0">
+            AKUPRESURA<i class="fas fa-angle-down rotate-icon"></i>
+      </h5>
+    </a>
+  </div>
+
+  <!-- Card body -->
+  <div id="collapseEleven11" class="collapse" role="tabpanel" aria-labelledby="headingEleven11" data-parent="#accordionEx">
+  <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+    <div class="card-body">
+            <p id="text"> YUMEIHO KOSTUBAN TERAPIJA</p>
+            
+    </div>
+</div>
+  </div>
+
+</div>
+<!-- Accordion card -->
+
+ <!-- Accordion card -->
+ <div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingTwelve12">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwelve12"
+            aria-expanded="false" aria-controls="collapseTwelve12">
+            <h5 class="mb-0">
+                    AKUPUNKTURA<i class="fas fa-angle-down rotate-icon"></i>
+            </h5>
+          </a>
+        </div>
+    
+        <!-- Card body -->
+        <div id="collapseTwelve12" class="collapse" role="tabpanel" aria-labelledby="headingTwelve12" data-parent="#accordionEx">
+        <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+          <div class="card-body">
+                <p id="text"> DRY NEEDLING </p> 
+                <p> ( terapija iglama)</p>
+          </div>
+        </div>
+</div>
+      </div>
+      <!-- Accordion card -->
+    
+       <!-- Accordion card -->
+<div class="card">
+
+        <!-- Card header -->
+        <div class="card-header" role="tab" id="headingThirteen13">
+          <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThirteen13"
+            aria-expanded="false" aria-controls="collapseThirteen13">
+            <h5 class="mb-0">
+                    MANIPULACIJA ZGLOBOVA <i class="fas fa-angle-down rotate-icon"></i>
+            </h5>
+          </a>
+        </div>
+    
+        <!-- Card body -->
+        <div id="collapseThirteen13" class="collapse" role="tabpanel" aria-labelledby="headingThirteen13" data-parent="#accordionEx">
+        <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+          <div class="card-body">
+                <p id="text"> Mobilizacijom asistirana kiropraktika kicme I perifernih zglobova</p>
+          </div>
+        </div>
+</div>
+      </div>
+      <!-- Accordion card -->
+
+      <div class="card">
+
+            <!-- Card header -->
+            <div class="card-header" role="tab" id="headingFourteen14">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFourteen14"
+                aria-expanded="false" aria-controls="collapseFourteen14">
+                <h5 class="mb-0">
+                        MIOFASCIJANO OPUŠTANJE <i class="fas fa-angle-down rotate-icon"></i>
+                </h5>
+              </a>
+            </div>
+        
+            <!-- Card body -->
+            <div id="collapseFourteen14" class="collapse" role="tabpanel" aria-labelledby="headingFourteen14" data-parent="#accordionEx">
+            <div id="flex"> 
+                    <div class="card-image">
+
+                    </div>
+              <div class="card-body">
+                    <p id="text1">Mobilizacija vezivnog tkiva I fascije mišica ERGON tehnikom
+                            </p>
+                            <p id="text1"> Mobilizacija vezivnog tkiva I fascija mišica pasivnim pokretima</p>
+              </div>
+            </div>
+</div>
+          </div>
+          <!-- Accordion card -->
+    </div>
+ 
+  
+        </div>
+        
+        <!-- Modal footer -->
+       
+                    </div>
+      </div>
+    </div>
+  
+                      <!-- X Manuelna terapija X -->
+
+              <!-- Patronana terapija -->
+                      <div class="modal" id="myModal4">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">PATRONOZNA TERAPIJA</h4>
+          <button type="button" id="close4" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+              <p> MOGUCNOST DOLASKA NA KUCNU ADRESU</p>
+               <p>  MOGUCNOST PRIMJENE FIZIKALNIH INTERVENCIJA SLABO POKRETNIM I
+                    NEPOKRETNIM PACIJENTIMA</p>
+                 <p>MOGUCNOST PRIMJENE FIZIKALNIH INTERVENCIJA U AKUTNIM STANJIMA BOLESTI
+                    I POVREDA</p>
+                <p>MOGUCNOST PRIMJENE FIZIKALNIH INTERVENCIJA PREOPERATIVNO I
+                    POSTOPERATIVNO 
+                    </p>
+        </div>
+        
+        <!-- Modal footer -->
+      
+                    </div>
+      </div>
+    </div>
+
+  <!-- X Patronazna terpaija X -->
+
     <main>
         
         <div class="top-page">
@@ -48,7 +598,7 @@
             </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars" style="font-size:16px"></i>
                 </div>
             </div>
             <div class="myItem">
@@ -118,54 +668,53 @@
                    
         </div>
        <!-- Modal -->
-       <div id="myModal" class="modal">
+       <div id="myModal" class="modalNewa">
 
             <!-- Modal content -->
             <div class="modal-content" id="bio-modal">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">Biografija</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" id="close" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-              <!-- <span class="close">&times;</span> -->
-              <p>BIOGRAFIJA
-                    Postdiplomske specijalističke studije iz neurološke fizioterapije završio
+              <div id="bio-modal-content">
+              <p>   Postdiplomske specijalističke studije iz neurološke fizioterapije završio
                     2016.godine u Igalu (Herceg Novi), na Medicinskom fakultetu (odsjek primijenjena
                     fizioterapija) na temu: ,,Fizioterapija kod paralize nervus facijalisa’’.Diplomirao na
                     Fakultetu primijenjene fizioterapije u Igalu 2015.godine na temi: ,,Fizioterapija
                     skolioza kod odraslih’’. U period u od 2014 do 2016.godine obavljao mandatnu
                     funkciju povjerenika studenata fizioterapije pri Studentskom Parlamentu na
                     Univerzitetu Crne GoreSrednju medicinsku školu završio 2012.godine u Podgorici
-                    (Crna Gora), smjer: laboratorijski tehničar.
-                    Od 2016. Do 2018. radio u OFK TITOGRAD iz Podgorice kao fizioterepeut
+                    (Crna Gora), smjer: laboratorijski tehničar.</p>
+                  <p id="bio-small">  Od 2016. Do 2018. radio u OFK TITOGRAD iz Podgorice kao fizioterepeut
                     seniorskog tima, kao I nižih selekcija. Osvajač zlatne medalje u finalu Kupa
                     2018.godine. Učestvovao u UEFA kvalifikacijama za Ligu Evrope
-                    2017/2018.godine.
-                    Od 2018 do 2019. radio u FK LOVĆEN sa Cetinja kao fizioterapeut seniorskog tima.
+                    2017/2018.godine.</p>
+                   <p id="bio-small"> Od 2018 do 2019. radio u FK LOVĆEN sa Cetinja kao fizioterapeut seniorskog tima.
                     Osvajač srebrne medalje u finalu Kupa 2019.godine.
                     Od 2019.godine angažovan u mladoj rukometnoj reprezentaciji Crne Gore na
                     poziciji fizioterapeuta, kao I Fudbalskog kluba FK RUDAR iz Pljevalja, u sklopu Prve
-                    Telekom lige Crne Gore.
-                    Dobitnik priznanja Udruženja ljekara sportske medicine Crne Gore za doprinos I
-                    razvoj sportske medicine CG, u Kolašinu 2016.godine.
-                    2019.godine razvio fizioterpijski brend POLLEX PHYSIO, sa željom da svoju
+                    Telekom lige Crne Gore.</p>
+                   <p id="bio-small"> Dobitnik priznanja Udruženja ljekara sportske medicine Crne Gore za doprinos I
+                    razvoj sportske medicine CG, u Kolašinu 2016.godine.</p>
+                   <p id="bio-small"> 2019.godine razvio fizioterpijski brend POLLEX PHYSIO, sa željom da svoju
                     polivalentnost prenese informativno I edukativno na mlade ljude u Crnoj Gori,
                     kako bi kvalitetan spektar fizioterapijskih terapijskih procedura učinio lakše
-                    dostupnim njenim korisnicima u zemlji.
-                    Redovan je I licenciran član Komore fizioterapeuta Crne Gore, posjeduje
-                    sertifikate prve klase koju su međunarodno priznati kao što su:
-                    - Proprioceptivna neuromišićna facilitacija (PNF 1&2)
-                    - OMT London Basic Spinal manipulation
-                    - OMT London Advanced Spinal manipulations
-                    - OMT London Medicine acupunkture
-                    - YUMEIHO KOTSUBAN
-                    - Ergon IASTM technique
-                    - EME Polyter Evo (Italian manufature for medical and physiotherapy
-                    devices)
-                    Oblasti u struci u kojima postiže najbolje rezultate sa dijagnozama odnose se
+                    dostupnim njenim korisnicima u zemlji.</p>
+                  <p id="bio-tit">  Redovan je I licenciran član Komore fizioterapeuta Crne Gore, posjeduje
+                    sertifikate prve klase koju su međunarodno priznati kao što su:</p>
+                   <p id="bio-list"> - Proprioceptivna neuromišićna facilitacija (PNF 1&2)</p>
+                   <p id="bio-list"> - OMT London Basic Spinal manipulation</p>
+                   <p id="bio-list"> - OMT London Advanced Spinal manipulations</p>
+                   <p id="bio-list"> - OMT London Medicine acupunkture</p>
+                   <p id="bio-list"> - YUMEIHO KOTSUBAN </p>
+                   <p id="bio-list"> - Ergon IASTM technique</p>
+                   <p id="bio-list"> - EME Polyter Evo (Italian manufature for medical and physiotherapy devices)</p>
+                    <p>Oblasti u struci u kojima postiže najbolje rezultate sa dijagnozama odnose se
                     primarno na neurološku rehabilitaciju, a sekundarno na fizioterapiju u sportu.
                     </p>
+                    </div>
             </div>
           
           </div>
@@ -182,504 +731,47 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     <br><br>
-                    <button type="button" class="button raise" id="btn1">Detaljnije</button>
+                    <button type="button" class="button raise" data-toggle="modal" data-target="#myModal1" id="btn1">Detaljnije</button>
             </div>
-             <!-- Modal1 -->
-       <div id="myModal1" class="modal">
-          
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close1">&times;</span>
-              <h1>Kineziterapija</h1>
-              
-              <!--Accordion wrapper-->
-
-            <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-
-            
-                <!-- Accordion card -->
-                <div class="card">
-            
-                <!-- Card header -->
-                <div class="card-header" id="box1" role="tab" id="headingTwo2">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                    aria-expanded="false" aria-controls="collapseTwo2">
-                    <h5 class="mb-0">
-                        SPORTSKA FIZIOTERAPIJA <i class="fas fa-plus"></i>
-                    </h5>
-                    </a>
-                </div>
-            
-                <!-- Card body -->
-                <div id="collapseTwo2" class="collapse " role="tabpanel" aria-labelledby="headingTwo2" data-parent="#accordionEx">
-                
-                      <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-                      
-                    <div class="card-body">
-                        <p id="text">Rehabilitacija povreda mišića </p>
-                        <p>  (kontuzije,istegnuća,rupture)</p>
-                        <p id="text">Rehabilitacija povreda ligamenata </p>
-                          <p>(istegnuća,rupture)</p>
-                        <p id="text">Rehabilitacija povreda tetiva </p>
-                          <p>(upale,istegnuća,rupture)</p>
-                        <p id="text">Preoperativna priprema I postoperativna </p>
-                         <p id="text1"> rehabilitacija sportskih povreda</p>
-                        <p id="text">Rehabilitacija usled instabiliteta zglobova,</p>
-                          <p id="text1"> poremećaja balansa I koordinacije</p>
-                    </div>
-
-                    </div>
-                </div>
-            
-                </div>
-                <!-- Accordion card -->
-            
-                <!-- Accordion card -->
-                <div class="card">
-                 
-                <!-- Card header -->
-                <div class="card-header" role="tab" id="headingThree3">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                    aria-expanded="false" aria-controls="collapseThree3">
-                    <h5 class="mb-0">
-                        NEUROLOŠKA FIZIOTERAPIJA <i class="fas fa-plus"></i>
-                    </h5>
-                    </a>
-                </div>
-            
-                <!-- Card body -->
-                <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3" data-parent="#accordionEx">
-                <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-                    <div class="card-body">
-                        <p id="text"> Rehabilitacija Moždanog udara</p>
-                         <p> (Ishemijski I hemoragijski)</p>
-                        <p id="text" class="pad">Rehabilitacija Multipleskleroze I Parkinsonove bolesti</p>
-                        <p id="text" class="pad"> Rehabilitacija Kvadripareze,Kvadriplegije,Parapareze I Paraplegije</p>
-                        <p id="text"> Rehabilitacija povreda Plexus brachialis-a</p>
-                        <p> (ulnaris,redialis,medianus)</p>
-                        <p id="text">Rehabilitacija povreda Plexus lumbosacralis-a</p>
-                        <p> ( peroneus, tibialis)</p>
-                        <p id="text">Rehabilitacija Discus herniae</p>
-                        <p> (cervikalna lokalizacija, lumbalna lokalizacija</p>
-                        <p id="text">Rehabilitacija mišićnih distrofija</p>
-                        <p> (Duchennova, Becherova)</p>
-                    </div>
-                    </div>
-                </div>
-            
-                </div>
-                <!-- Accordion card -->
-
-                <!-- Accordion card -->
-                <div class="card">
-            
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingFour4">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
-                            aria-expanded="false" aria-controls="collapseThree3">
-                            <h5 class="mb-0">
-                                ORTOPEDSKA FIZIOTERAPIJA <i class="fas fa-plus"></i>
-                            </h5>
-                        </a>
-                        </div>
-                    
-                        <!-- Card body -->
-                        <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4" data-parent="#accordionEx">
-                        <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-                        <div class="card-body">
-                            <p id="text" class="pad">Postoperativna rehabilitacija preloma I naprsnuća kostiju</p>
-                            <p id="text" class="pad">Postopertivna rehabilitacija Endoproteza kuka, koljena,ramena I lakta</p>
-                            <p id="text" class="pad">Postoperativna rehabilitacija nakon amputacije ekstremiteta</p>
-                            <p id="text">Postoperativna rehabilitacija nakon diskus hernije</p>
-                            <p> (cervikalna I lumbalna)</p>
-                        </div>
-                        </div>
-                    </div>
-                    
-                    </div>
-                    <!-- Accordion card -->
-                    
-                    <!-- Accordion card -->
-                <div class="card">
-            
-                        <!-- Card header -->
-                        <div class="card-header" role="tab" id="headingFive5">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
-                            aria-expanded="false" aria-controls="collapseFive5">
-                            <h5 class="mb-0">
-                                MUSKULOSKELETNA FIZIOTERAPIJA <i class="fas fa-plus"></i>
-                            </h5>
-                        </a>
-                        </div>
-                    
-                        <!-- Card body -->
-                        <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5" data-parent="#accordionEx">
-                        <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-                        <div class="card-body">
-                            <p id="text" class="pad"> Cervikalnog (vratnog) bolnog sindroma.</p>
-                            <p id="text" class="pad"> Rehabilitacija Lumbalnog (donja ledja) nespecifičnog bolnog sindroma.</p>
-                            <p id="text">Rehabilitacija deformiteta kičmenog stuba.</p>
-                            <p> (lordoza,kifoza,skolioza)</p>
-                            <p id=text class="pad"> Rehabilitacija reumatoloških bolesti (zapaljenske I degenerativne):</p>
-                            <p> - Reumatoidni artritis (RA).</p>
-                            <p> - Ankilozirajući spondylitis (Morbus Behterew).</p>
-                            <p> - Fibromijalgija.</p>
-                            <p> - Koksartroza I Gonartroza.</p>
-                            <p> - Epycondilitis (teniski I golferski lakat).</p>
-                            <p id="text"> Rehabilitacija bolnog ramena</p>
-                            <p> (Periarthritis humeroscapularis).</p>
-                            <p id="text" class="pad"> Rehabilitacija Osteoporoze.</p>
-                            <p id="text"> Rehabilitacija KRBS</p>
-                            <p> (kompleksni regionalni bolni sindrom).</p>
-                            <p id="text" class="pad"> Specijalni program vježbi:</p>
-                            <p> - Škola leđa (Institut Igalo).</p>
-                            <p> - Williamsove I McKenzijeve vježbe za lumbalnu kičmu.</p>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <!-- Accordion card -->
-                    
-            
-            </div>
-            <!-- Accordion wrapper -->
-            </div>
-          
-          </div>
+                     
             <div class="myCard"  data-aos="fade-up">
                 <h2>Elektroterapija</h2>
                 <br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     <br><br>
-                    <button type="button" class="button raise" id="btn2">Detaljnije</button>
+                    <button type="button" class="button raise" id="btn2" data-toggle="modal" data-target="#myModal2">Detaljnije</button>
             </div>
-    <!-- Modal -->
 
-       <div id="myModal2" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close2">&times;</span>
-
-              <h1>Elektroterapija</h1>
-                              <!--Accordion wrapper-->
-<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-
-   
-   
-   
- 
-  
-    <!-- Accordion card -->
-    <div class="card">
-  
-      <!-- Card header -->
-      <div class="card-header" role="tab" id="headingSix6">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSix6"
-          aria-expanded="false" aria-controls="collapseSix6">
-          <h5 class="mb-0">
-            POLYTER EVO UREĐAJ  <i class="fas fa-plus"></i>
-          </h5>
-        </a>
-      </div>
-  
-      <!-- Card body -->
-      <div id="collapseSix6" class="collapse" role="tabpanel" aria-labelledby="headingSix6" data-parent="#accordionEx">
-      <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-        <div class="card-body">
-                <p> TECARE terapija</p>
-                <p> HIL Laser visokog inteziteta</p>
-                <p> Terapijski UZ (utrazvuk)</p>
-        </div>
-      </div>
-                    </div>
-  
-    </div>
-    <!-- Accordion card -->
-  
-    <!-- Accordion card -->
-    <div class="card">
-  
-      <!-- Card header -->
-      <div class="card-header" role="tab" id="headingSeven7">
-        <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseSeven7"
-          aria-expanded="false" aria-controls="collapseSeven7">
-          <h5 class="mb-0">
-            ELECTRODESIGN MEDICAL COMBI UREĐAJ<i class="fas fa-plus"></i>
-          </h5>
-        </a>
-      </div>
-  
-      <!-- Card body -->
-      <div id="collapseSeven7" class="collapse" role="tabpanel" aria-labelledby="headingSeven7" data-parent="#accordionEx">
-      <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-        <div class="card-body">
-                <p> TENS (transkutana elektromišićna nervna stimulacija)</p>
-                <p> GALVANSKA STRUJA</p>
-                <p> ELEKTROSTIMULACIJA</p>
-        </div>
-      </div>
-                    </div>
-  
-    </div>
-    <!-- Accordion card -->
-
-     <!-- Accordion card -->
-     <div class="card">
-  
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingEight8">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseEight8"
-                aria-expanded="false" aria-controls="collapseEight8">
-                <h5 class="mb-0">
-                    ELECTRODESIGN MEDICAL MAGNETHOTHERAPY UREĐAJ<i class="fas fa-plus"></i>
-                </h5>
-              </a>
-            </div>
-        
-            <!-- Card body -->
-            <div id="collapseEight8" class="collapse" role="tabpanel" aria-labelledby="headingEight8" data-parent="#accordionEx">
-            <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-              <div class="card-body">
-                    <p> MAGNETNA TERAPIJA (niskofrekfentno magnetno polje)</p>
-              </div>
-            </div>
-                    </div>
-        
-          </div>
-          <!-- Accordion card -->
-        
-           <!-- Accordion card -->
-    <div class="card">
-  
-            <!-- Card header -->
-            <div class="card-header" role="tab" id="headingNine9">
-              <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseNine9"
-                aria-expanded="false" aria-controls="collapseNine9">
-                <h5 class="mb-0">
-                    THERAGUN G3 PRO UREĐAJ  <i class="fas fa-plus"></i>
-                </h5>
-              </a>
-            </div>
-        
-            <!-- Card body -->
-            <div id="collapseNine9" class="collapse" role="tabpanel" aria-labelledby="headingNine9" data-parent="#accordionEx">
-            <div id="flex"> 
-                        <div class="card-image">
-
-                        </div>
-              <div class="card-body">
-                    <p> Perkusiona terapija masažnim pištoljem (2400 udara/min)</p>
-              </div>
-            </div>
-                    </div>
-          </div>
-          <!-- Accordion card -->
-        
-  
-  </div>
+                    
 
            
-            </div>
-          
-          </div>
+  
             <div class="myCard"  data-aos="fade-up">
                 <h2>Manuelna terapija</h2>
                 <br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     <br><br>
-                    <button type="button" class="button raise" id="btn3">Detaljnije</button>
+                    <button type="button" class="button raise" id="btn3"  data-toggle="modal" data-target="#myModal3">Detaljnije</button>
             </div>
-                       <!-- Modal -->
-       <div id="myModal3" class="modal">
 
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close3">&times;</span>
-              <h1>Manuelnaterapija</h1>
-                                        <!--Accordion wrapper-->
-<div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
-
-   
-   
-   
- 
-  
-        <!-- Accordion card -->
-        <div class="card">
-      
-          <!-- Card header -->
-          <div class="card-header" role="tab" id="headingTen10">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTen10"
-              aria-expanded="false" aria-controls="collapseTen10">
-              <h5 class="mb-0">
-                    MANUELNA MASAŽA:  <i class="fas fa-plus"></i>
-              </h5>
-            </a>
-          </div>
-      
-          <!-- Card body -->
-          <div id="collapseTen10" class="collapse" role="tabpanel" aria-labelledby="headingTen10" data-parent="#accordionEx">
-            <div class="card-body">
-                    <p>Terapeutska Švedska masaža</p>
-                    <p> Sportska masaža</p>
-                    <p>Limfna drenaža</p>
-            </div>
-          </div>
-      
-        </div>
-        <!-- Accordion card -->
-      
-        <!-- Accordion card -->
-        <div class="card">
-      
-          <!-- Card header -->
-          <div class="card-header" role="tab" id="headingEleven11">
-            <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseEleven11"
-              aria-expanded="false" aria-controls="collapseEleven11">
-              <h5 class="mb-0">
-                    AKUPRESURA<i class="fas fa-plus"></i>
-              </h5>
-            </a>
-          </div>
-      
-          <!-- Card body -->
-          <div id="collapseEleven11" class="collapse" role="tabpanel" aria-labelledby="headingEleven11" data-parent="#accordionEx">
-            <div class="card-body">
-                    <p> YUMEIHO KOSTUBAN TERAPIJA</p>
-                    
-            </div>
-          </div>
-      
-        </div>
-        <!-- Accordion card -->
+         
     
-         <!-- Accordion card -->
-         <div class="card">
-      
-                <!-- Card header -->
-                <div class="card-header" role="tab" id="headingTwelve12">
-                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwelve12"
-                    aria-expanded="false" aria-controls="collapseTwelve12">
-                    <h5 class="mb-0">
-                            AKUPUNKTURA<i class="fas fa-plus"></i>
-                    </h5>
-                  </a>
-                </div>
-            
-                <!-- Card body -->
-                <div id="collapseTwelve12" class="collapse" role="tabpanel" aria-labelledby="headingTwelve12" data-parent="#accordionEx">
-                  <div class="card-body">
-                        <p> DRY NEEDLING ( terapija iglama)</p>
-                  </div>
-                </div>
-            
-              </div>
-              <!-- Accordion card -->
-            
-               <!-- Accordion card -->
-        <div class="card">
-      
-                <!-- Card header -->
-                <div class="card-header" role="tab" id="headingThirteen13">
-                  <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThirteen13"
-                    aria-expanded="false" aria-controls="collapseThirteen13">
-                    <h5 class="mb-0">
-                            MANIPULACIJA ZGLOBOVA <i class="fas fa-plus"></i>
-                    </h5>
-                  </a>
-                </div>
-            
-                <!-- Card body -->
-                <div id="collapseThirteen13" class="collapse" role="tabpanel" aria-labelledby="headingThirteen13" data-parent="#accordionEx">
-                  <div class="card-body">
-                        <p> Mobilizacijom asistirana kiropraktika kičme I perifernih zglobova</p>
-                  </div>
-                </div>
-            
-              </div>
-              <!-- Accordion card -->
-
-              <div class="card">
-      
-                    <!-- Card header -->
-                    <div class="card-header" role="tab" id="headingFourteen14">
-                      <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFourteen14"
-                        aria-expanded="false" aria-controls="collapseFourteen14">
-                        <h5 class="mb-0">
-                                MIOFASCIJANO OPUŠTANJE <i class="fas fa-plus"></i>
-                        </h5>
-                      </a>
-                    </div>
-                
-                    <!-- Card body -->
-                    <div id="collapseFourteen14" class="collapse" role="tabpanel" aria-labelledby="headingFourteen14" data-parent="#accordionEx">
-                      <div class="card-body">
-                            <p>Mobilizacija vezivnog tkiva I fascije mišića ERGON tehnikom
-                                    </p>
-                                    <p> Mobilizacija vezivnog tkiva I fascija mišića pasivnim pokretima</p>
-                      </div>
-                    </div>
-                
-                  </div>
-                  <!-- Accordion card -->
-            </div>
-            </div>
-          </div>
             <div class="myCard"  data-aos="fade-up">
                 <h2>Patronazna terapija</h2>
                 <br><br>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
                     <br><br>
-                    <button type="button" class="button raise" id="btn4">Detaljnije</button>
+                    <button type="button" class="button raise" id="btn4"  data-toggle="modal" data-target="#myModal4">Detaljnije</button>
             </div>
-                          <!-- Modal -->
-       <div id="myModal4" class="modal">
-
-            <!-- Modal content -->
-            <div class="modal-content">
-              <span class="close4">&times;</span>
-              <h1>Patronazna terapija</h1>
-              <p> MOGUĆNOST DOLASKA NA KUĆNU ADRESU</p>
-               <p>  MOGUĆNOST PRIMJENE FIZIKALNIH INTERVENCIJA SLABO POKRETNIM I
-                    NEPOKRETNIM PACIJENTIMA</p>
-                 <p>MOGUĆNOST PRIMJENE FIZIKALNIH INTERVENCIJA U AKUTNIM STANJIMA BOLESTI
-                    I POVREDA</p>
-                <p>MOGUĆNOST PRIMJENE FIZIKALNIH INTERVENCIJA PREOPERATIVNO I
-                    POSTOPERATIVNO 
-                    </p>
-            </div>
-          
-          </div>
+     
         </div>
         </div>
     </section>
     <section>
-        <div class="certificate">
+        <div class="certificate" id="cert">
              <!-- Swiper -->
   <div class="swiper-container" data-aos="fade-up">
     <div class="swiper-wrapper" id="sw">
@@ -776,7 +868,7 @@
 
          <div  style="text-align: center;" id="phone-div">
 
-             <button type="button"id="btn5"  onclick="showPhone()">Zakaži</button> 
+             <button class="raise" type="button"id="btn5"  onclick="showPhone()">Zakaži</button> 
              <div id="phone" class="animated slideInDown">Pozovi +382 67 270 793</div>
            
         </div> 
@@ -802,9 +894,9 @@
             <span class="error"></span>
             <input type="email" placeholder="Email" name="email" id="email1"  >
             <span class="error"></span>
-            <textarea name=""  cols="22" rows="4" placeholder="Poruka" id="message1" name="message" ></textarea>
+            <textarea name=""  placeholder="Poruka" id="message1" name="message" ></textarea>
             <span id="error1"></span>
-            <button class="button" type="submit" name="submit" id="submit"> Posalji</button>
+            <button class="button raise" type="submit" name="submit" id="submit"> Posalji</button>
           </form>
         </div>
 
@@ -813,7 +905,7 @@
         </div>
         <div class="contact-footer" data-aos="fade-up">
             <div class="">
-                <h2 class=" mb-4 font-weight-bold" >Info</h2>
+                <h2 class=" mb-4 font-weight-bold" >Informacije</h2>
                 <p>
                   <i class="fas fa-home mr-3"></i> Vinogradska, Podgorica</p>
                 <p>
@@ -915,6 +1007,6 @@
       });
 
       </script>
-    <!-- col-md-4 col-lg-3 col-xl-3 mx-auto mt-3 -->
+
 </body>
 </html>

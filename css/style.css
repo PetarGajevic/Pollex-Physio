@@ -91,7 +91,7 @@ background-size: cover;
 .nav .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .nav .toggle-collapse .toggle-icons i{
@@ -242,8 +242,31 @@ background-size: cover;
    
 }
 
+#bio-modal #bio-small{
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+#bio-modal #bio-list{
+    margin: 15px 20px;
+    text-align: left;
+}
+
+#bio-modal #bio-modal-content{
+    width: 70%;
+    margin: auto;
+}
+
+
+
+.modal-content::-webkit-scrollbar {
+    display: none;
+    }
+
+
 #bio-modal p{
-    margin: 30px 20px;
+    margin: 15px 20px;
+    text-align: justify;
 }
 .bio-image #spec{
     font-size: 14px;
@@ -472,15 +495,15 @@ background-size: cover;
 /* -----------Modal------------ */
 
 /* The Modal (background) */
-.modal {
+.modalNewa {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
     top: 0;
-    width: 100vh; /* Full width */
-    height: 100vh; /* Full height */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
     /* overflow: scroll!important; Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -494,9 +517,9 @@ background-size: cover;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 90%;
+    width: 80%;
     align-self: center;
-    max-height: calc(100vh - 210px);
+    max-height: calc(100vh - 160px);
     overflow-y: auto;
     animation-name: animatetop;
     animation-duration: 0.6s
@@ -518,18 +541,26 @@ background-size: cover;
     text-align: center;
   }
 
+  .modal-dialog{
+      width: 70%!important;
+      margin: auto!important;
+  }
+
   .card{
     border: 1px solid #1FC4C4;
   }
 
   
+  .card-header h5{
+    color: #004467;
+  }
 
   .card-body{
     display: flex;
     flex-direction: column;
     text-align: left;
     padding-top: 20px;
-    
+    width: 50%;
   }
 
   .card-body p{
@@ -537,7 +568,30 @@ background-size: cover;
       font-size: 14px;
       color: #004467;
       padding-bottom: 15px;
+      font-family: Open Sans;
      
+  }
+
+  .modal-body p{
+    margin: 0;
+    font-size: 17px;
+    color: #004467;
+    padding-bottom: 15px;
+    font-family: Open Sans;
+  }
+
+
+
+ .modal-dialog{
+     padding-top: 50px;
+ }
+
+  .card-body #categ{
+    margin: 0;
+    font-size: 14px;
+    color: #004467;
+    padding-bottom: 5px;
+    font-family: Open Sans;
   }
 
   .card-body #text{
@@ -551,11 +605,21 @@ background-size: cover;
     font-size: 18px;
     color: #004467;
     padding-bottom: 15px;
+    font-family: Open Sans;
 }
 
 .pad{
     padding-bottom: 15px!important;
 }
+
+.modal-title{
+    text-align: center;
+    font: Bold 26px Open Sans;
+    color: #004467;
+}
+
+
+
 
   .card-image{
       display: flex;
@@ -680,8 +744,8 @@ background-size: cover;
     text-align: center;
     font-size: 18px;
     background: #fff;
-    display: contents;
-    height: 100%;
+    display: inline-block;
+     height: 100%; 
     z-index: 0;
   }
 
@@ -729,16 +793,18 @@ background-size: cover;
 .links-footer{
     display: flex;
      flex-direction: column; 
-    width: 25rem;
+    width: 40%;
 }
 .contact-footer{
     display: flex;
      flex-direction: column;
     width: 25rem;
+    margin: 30px;
 }
 
 .contact h2 {
     color: #006084;
+    
 }
 
 
@@ -782,6 +848,7 @@ form input{
     padding: 10px;
     border: 1px solid #006084;
     border-radius: 5px;
+    width: 60%;
 }
 
 
@@ -798,6 +865,8 @@ form textarea {
     padding: 10px;
     border: 1px solid #006084;
     border-radius: 5px;
+    width: 60%;
+    height: 100px;
 }
 
 /* form button {
@@ -819,6 +888,12 @@ form textarea {
  
 
 /* Viewport mobile */
+
+@media(max-width:811px){
+    .card-body{
+        width: 90%;
+    }
+}
 
 @media(min-width:2301px){
     #sw div{
@@ -907,13 +982,7 @@ form textarea {
 
 }
 
-/* 
-@media(max-width:750px){
-#flex{
-    flex-direction: column;
-}
-}
- */
+
 @media(max-width:600px){
     .nav .nav-menu, .nav .nav-items{
         flex-direction: column;
@@ -970,6 +1039,41 @@ form textarea {
 .bio-title h1 {
     font: Bold 40px Open Sans;
 }
+
+.modal-dialog{
+    width: 85%!important;
+    margin: auto!important;
+}
+
+.modal-content{
+    width: 100%;
+}
+
+#bio-modal #bio-modal-content {
+    width: 90%;
+    margin: auto;
+}
+
+.bottom-footer{
+    width: 100%;
+    padding: 10px;
+}
+.company-footer{
+    width: 80%;
+    text-align: center;
+}
+.links-footer{
+    width: 100%;
+}
+
+#cont input, #cont textarea{
+    width: 90%;
+}
+
+#cont textarea{
+    height: 100px;
+}
+
 }
 
 

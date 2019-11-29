@@ -8,6 +8,85 @@ $(document).ready(function(){
         $nav.toggleClass('myCollapse');
     })
 
+
+    var btn5 = document.getElementsByClassName("button")[0];
+    btn5.onclick = function(){
+      document.getElementById('htmls').style.overflow = "hidden";
+    }
+    var btn6 = document.getElementById("btn2");
+    btn6.onclick = function(){
+      document.getElementById('htmls').style.overflow = "hidden";
+    }
+    var btn7 = document.getElementById("btn3");
+    btn7.onclick = function(){
+      document.getElementById('htmls').style.overflow = "hidden";
+    }
+    var btn8 = document.getElementById("btn4");
+    btn8.onclick = function(){
+      document.getElementById('htmls').style.overflow = "hidden";
+    }
+    window.addEventListener("click",  function(event) {
+      var modal5 = document.getElementById("myModal1");
+      if (event.target == modal5) {
+        document.getElementById('htmls').style.overflow = "auto";
+      }
+
+      var modal6 = document.getElementById("myModal2");
+      if (event.target == modal6) {
+        
+        document.getElementById('htmls').style.overflow = "auto";
+      }
+
+      var modal7 = document.getElementById("myModal3");
+      if (event.target == modal7) {
+        
+        document.getElementById('htmls').style.overflow = "auto";
+      }
+
+      var modal8 = document.getElementById("myModal4");
+      if (event.target == modal8) {
+        
+        document.getElementById('htmls').style.overflow = "auto";
+      }
+    })
+
+    var span1 = document.getElementById("close");
+    span1.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById('htmls').style.overflow = "auto";
+    }
+
+    var span2 = document.getElementById("close1");
+    span2.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById('htmls').style.overflow = "auto";
+    }
+
+    var span3 = document.getElementById("close2")
+    span3.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById('htmls').style.overflow = "auto";
+    }
+
+    var span4 = document.getElementById("close3")
+    span4.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById('htmls').style.overflow = "auto";
+    }
+
+    var span5 = document.getElementById("close4")
+    span5.onclick = function() {
+      modal.style.display = "none";
+      document.getElementById('htmls').style.overflow = "auto";
+    }
+       
+      
+
+
+  
+
+  
+
 //     // Fixed navbar
 //     window.onscroll = function() {myFunction()};
 
@@ -60,6 +139,9 @@ $(document).ready(function(){
       },
     });
    
+
+   
+    
     
     
 
@@ -91,14 +173,13 @@ $(document).ready(function(){
       })
       
       // Modal 1
-      var modal1 = document.getElementById("myModal1");
+     /*  var modal1 = document.getElementById("myModal1");
       var btn1 = document.getElementById("btn1");
       var span1 = document.getElementsByClassName("close1")[0];
-      var modalContent = document.getElementsByClassName("modal-content");
-      btn1.onclick = function() {
+      var swiper = document.getElementById("cert");
+     btn1.onclick = function() {
         modal1.style.display = "block";
-        // modalContent.style.max-height = "calc(100vh - 210px)"; 
-
+        // swiper.style.display = "none";
         document.getElementById('htmls').style.overflow = "hidden ";
       }
       span1.onclick = function() {
@@ -131,17 +212,17 @@ $(document).ready(function(){
             document.getElementById('htmls').style.overflow = "auto";
           }
         })
-
-         // Modal 3
+ */
+      /*    // Modal 3
          var modal3 = document.getElementById("myModal3");
          var btn3 = document.getElementById("btn3");
          var span3 = document.getElementsByClassName("close3")[0];
-         btn3.onclick = function() {
+        /*  btn3.onclick = function() {
            modal3.style.display = "block";
            document.getElementById('htmls').style.overflow = "hidden";
   
-         }
-         span3.onclick = function() {
+         } */
+      /*    span3.onclick = function() {
            modal3.style.display = "none";
            document.getElementById('htmls').style.overflow = "auto";
          }
@@ -170,6 +251,6 @@ $(document).ready(function(){
              modal4.style.display = "none";
              document.getElementById('htmls').style.overflow = "auto";
            }
-        })
-
+        }) */
+ 
 });

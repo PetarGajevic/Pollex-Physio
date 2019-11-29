@@ -26,7 +26,7 @@ $mail->isSMTP();
 $mail->Host = 'n3plcpnl0239.prod.ams3.secureserver.net';
 $mail->SMTPAuth = true;
 $mail->Username = "info@pollexphysio.me";
-$mail->Password = "bnquofzt6gji";
+$mail->Password = "t4jw6s7k7if2";
 $mail->Port = 587;
 $mail->SMTPSecure = "tls";
 
