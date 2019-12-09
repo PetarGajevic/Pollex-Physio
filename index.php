@@ -591,6 +591,7 @@
     <main>
         
         <div class="top-page">
+          <!-- <img src="./assets/Homepage-naslovna3.jpg"> -->
         <nav class="nav navbar-fixed-top" id="myHeader">
             <div class="nav-menu flex-row ">
                 <div class="nav-brand">
@@ -611,11 +612,46 @@
             </div>
             </div>
           </nav>
-        <div class="title">
+        
+          <div id="my-slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+          <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+          <li data-target="#my-slider" data-slide-to="1"></li>
+          <li data-target="#my-slider" data-slide-to="2"></li>
+            </ol> 
+          
+          <div class="carousel-inner" role="listbox">
+              <div class="top-page1 item active">
+              <div class="title">
                 <p data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">Dobrodošli na</p>
+                data-aos-anchor-placement="top-bottom">Dobrodošli na</p>
                 <h1 class="animated fadeIn">POLLEX PHYSIO</h1>
         </div>
+              </div>
+              <div class="top-page2 item">
+              <div class="title">
+                <p data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">Dobrodošli na</p>
+                <h1 class="animated fadeIn">POLLEX PHYSIO</h1>
+        </div>
+              </div>
+              <div class="top-page3 item">
+              <div class="title">
+                <p data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom">Dobrodošli na</p>
+                <h1 class="animated fadeIn">POLLEX PHYSIO</h1>
+        </div>
+              </div>
+          <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </a>
+          <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </a>
+
+            </div>
+          </div>
+        
     
         
     </div>
@@ -653,7 +689,7 @@
                     Od 2019.godine angažovan u mladoj rukometnoj reprezentaciji Crne Gore na
                     poziciji fizioterapeuta, kao I Fudbalskog kluba FK RUDAR iz Pljevalja, u sklopu Prve Telekom lige Crne Gore. </p>
                    
-                           <div class="more">
+                           <div class="more" id="more">
                         <p id="moreIcon"></p>
                         <p id="moreText">Pročitaj</p>
                     </div>   

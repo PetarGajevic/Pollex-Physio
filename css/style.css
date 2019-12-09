@@ -63,9 +63,9 @@ a{
 }
 
 .nav .nav-brand{
-    width: 50px;
+    width: 190px;
     height: 50px;
-background-image: url('../assets/Logo-znak-only.png');
+background-image: url('../assets/LogoPollex-horizontal.svg');
 background-position: center;
 background-size: cover;
 }
@@ -141,13 +141,28 @@ background-size: cover;
 
 /* -----------Top Page---------- */
 
-.top-page{
- /* background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%); */
+.top-page1{
     background-image: url('../assets/Homepage-naslovna3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
- height: 700px;
+    height: 700px;
+}
+
+.top-page2{
+       background-image: url('../assets/Slider2.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       height: 700px;
+   }
+
+   .top-page3{
+    background-image: url('../assets/Slider3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
 }
 
 .title{
@@ -163,6 +178,7 @@ background-size: cover;
     font-size: 60px!important;
     animation-duration: 3s;
     font-weight: bold;
+    text-shadow: 2px 2px 4px #004467;
 }
 
 .title p{
@@ -243,7 +259,12 @@ background-size: cover;
 .more{
     display: flex;
     flex-direction: row;
-    
+    width: fit-content;
+}
+
+#more:hover{
+    cursor: pointer;
+    color: #1fc4c4;
 }
 
 .bio-content #moreIcon{

@@ -1,6 +1,9 @@
 
 $(document).ready(function(){
 
+  $('.carousel').carousel({
+    interval: false
+});
 
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
@@ -150,7 +153,7 @@ $(document).ready(function(){
 
     // Modal
     var modal = document.getElementById("myModal");
-    var btn = document.getElementById("moreText");
+    var btn = document.getElementById("more");
     var span = document.getElementsByClassName("close")[0];
     btn.onclick = function() {
         modal.style.display = "block";
