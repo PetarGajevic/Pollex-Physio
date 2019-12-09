@@ -245,11 +245,13 @@ background-size: cover;
 #bio-modal #bio-small{
     margin: 0px 20px;
     text-align: justify;
+    font-family: 'Assistant',sans-serif;
 }
 
 #bio-modal #bio-list{
     margin: 15px 20px;
     text-align: left;
+    font: Italic 14px/20px Open Sans;
 }
 
 #bio-modal #bio-modal-content{
@@ -257,6 +259,9 @@ background-size: cover;
     margin: auto;
 }
 
+#bio-tit{
+    font-size: larger;
+}
 
 
 .modal-content::-webkit-scrollbar {
@@ -267,6 +272,7 @@ background-size: cover;
 #bio-modal p{
     margin: 15px 20px;
     text-align: justify;
+    font-family: 'Assistant',sans-serif;
 }
 .bio-image #spec{
     font-size: 14px;
@@ -1072,6 +1078,9 @@ form textarea {
 
 #cont textarea{
     height: 100px;
+}
+.contact-footer{
+    text-align: center;
 }
 
 }

@@ -79,11 +79,11 @@
       
     <div class="card-body">
         <p id="text">Rehabilitacija povreda mišica </p>
-        <p>  (kontuzije,istegnuca,rupture)</p>
+        <p>  (kontuzije, istegnuca, rupture)</p>
         <p id="text">Rehabilitacija povreda ligamenata </p>
-          <p>(istegnuca,rupture)</p>
+          <p>(istegnuca, rupture)</p>
         <p id="text">Rehabilitacija povreda tetiva </p>
-          <p>(upale,istegnuca,rupture)</p>
+          <p>(upale, istegnuca, rupture)</p>
         <p id="text">Preoperativna priprema I postoperativna </p>
          <p id="text1"> rehabilitacija sportskih povreda</p>
         <p id="text">Rehabilitacija usled instabiliteta zglobova,</p>
@@ -121,7 +121,7 @@
         <p id="text" class="pad">Rehabilitacija Multipleskleroze I Parkinsonove bolesti</p>
         <p id="text" class="pad"> Rehabilitacija Kvadripareze, Kvadriplegije, Parapareze I Paraplegije</p>
         <p id="text"> Rehabilitacija povreda Plexus brachialis-a</p>
-        <p> (ulnaris,redialis,medianus)</p>
+        <p> (ulnaris, redialis, medianus)</p>
         <p id="text">Rehabilitacija povreda Plexus lumbosacralis-a</p>
         <p> ( peroneus, tibialis)</p>
         <p id="text">Rehabilitacija Discus herniae</p>
@@ -156,7 +156,7 @@
         </div>
         <div class="card-body">
             <p id="text" class="pad">Postoperativna rehabilitacija preloma I naprsnuca kostiju</p>
-            <p id="text" class="pad">Postopertivna rehabilitacija Endoproteza kuka, koljena,ramena I lakta</p>
+            <p id="text" class="pad">Postopertivna rehabilitacija Endoproteza kuka, koljena, ramena I lakta</p>
             <p id="text" class="pad">Postoperativna rehabilitacija nakon amputacije ekstremiteta</p>
             <p id="text">Postoperativna rehabilitacija nakon diskus hernije</p>
             <p> (cervikalna I lumbalna)</p>
@@ -613,7 +613,7 @@
           </nav>
         <div class="title">
                 <p data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">Dragi posjetioci, dobrodosli u</p>
+     data-aos-anchor-placement="top-bottom">Dragi posjetioci, dobrodošli u</p>
                 <h1 class="animated fadeIn">POLLEX PHYSIO</h1>
         </div>
     
