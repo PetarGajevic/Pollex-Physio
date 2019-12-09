@@ -48,7 +48,7 @@ a{
 }
 
 .nav{
-    background: rgba(255, 255, 255, 0.747);
+    background: rgba(255, 255, 255, 0.918);
     /* padding: 0 2rem; */
     height: auto;
     min-height: 9vh;
@@ -76,6 +76,8 @@ background-size: cover;
     transition-duration: 0.2s ;
     color: #004467;
     font-size: 17px;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 
@@ -109,6 +111,30 @@ background-size: cover;
     margin-bottom: auto;
 }
 
+
+
+#biographyNav a::after{
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #1fc4c4;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+#biographyNav a:hover::after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  #therapyNav a:hover{
+      color: #1fc4c4;
+  }
+
   
 
 /* ------x-----Navbar--------x---- */
@@ -133,10 +159,10 @@ background-size: cover;
 }
 
 .title h1{
-    /* font-family: initial; */
     font-family: "Open Sans"!important;
     font-size: 60px!important;
     animation-duration: 3s;
+    font-weight: bold;
 }
 
 .title p{
@@ -361,6 +387,15 @@ background-size: cover;
     white-space: nowrap;
 }
 
+.myCard p{
+    height: 150px;
+}
+
+#kin-el{
+    height: 150px;
+    padding-top: 25px;
+}
+
 
 /* ------x------Pollex Therapy------x------ */
 
@@ -419,7 +454,7 @@ background-size: cover;
   .title-packets h1{
     text-align: center;
     padding-top: 70px;
-     font: Bold 35px Noto Sans; 
+     font: Bold 35px Open Sans; 
   }
 
   .myPacket p{
@@ -890,6 +925,21 @@ form textarea {
     color:red;
 }
 
+#more1 {display: none;}
+
+#more2 {display: none;}
+
+#more3 {display: none;}
+
+#myBtn{
+width: 50%;
+background: transparent linear-gradient(180deg, #1FC4C4 0%, #006084 100%) 0% 0% no-repeat padding-box;
+border: 1px solid #1CB9BD;
+border-radius: 3px;
+color: white;
+}
+
+
   /* X Footer X */
  
 
@@ -976,14 +1026,14 @@ form textarea {
 
 @media(min-width:1400px) and (max-width:2000px){
     .title-packets h1{
-         font: Bold 40px Noto Sans; 
+         font: Bold 40px Open Sans; 
       }
 
 }
 
 @media(min-width:2001px){
     .title-packets h1{
-        font: Bold 45px Noto Sans; 
+        font: Bold 45px Open Sans; 
      }
 
 }

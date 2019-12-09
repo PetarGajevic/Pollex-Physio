@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/all.css">
 
     <script src="./js/Jquery.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -613,7 +613,7 @@
           </nav>
         <div class="title">
                 <p data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">Dragi posjetioci, dobrodošli u</p>
+     data-aos-anchor-placement="top-bottom">Dobrodošli na</p>
                 <h1 class="animated fadeIn">POLLEX PHYSIO</h1>
         </div>
     
@@ -728,8 +728,9 @@
             <div class="myCard"  data-aos="fade-up">
                 <h2>Kineziterapija</h2>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p id="kin-el">Kineziterapija je najbitniji oblik fizikalne terapije.Odnosi se na 
+upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijenata.
+</p>
                     <br><br>
                     <button type="button" class="button raise" data-toggle="modal" data-target="#myModal1" id="btn1">Detaljnije</button>
             </div>
@@ -737,8 +738,7 @@
             <div class="myCard"  data-aos="fade-up">
                 <h2>Elektroterapija</h2>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p id="kin-el">Elektroterapija je oblik fizikalne terapije koji podrazumjeva primjenu modaliteta struje u terapijske svrhe uz pomoć specijalne aparature.</p>
                     <br><br>
                     <button type="button" class="button raise" id="btn2" data-toggle="modal" data-target="#myModal2">Detaljnije</button>
             </div>
@@ -750,8 +750,7 @@
             <div class="myCard"  data-aos="fade-up">
                 <h2>Manuelna terapija</h2>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p>Manuelna terapija je oblik fizikalne terapije koji predstavlja upotrebu specijalnih manuelnih tehnika i vještina koje fizioterapeut sprovodi rukama u cilju dijagnostike,prevencije,i liječenja u rehabilitaciji.</p>
                     <br><br>
                     <button type="button" class="button raise" id="btn3"  data-toggle="modal" data-target="#myModal3">Detaljnije</button>
             </div>
@@ -759,10 +758,9 @@
          
     
             <div class="myCard"  data-aos="fade-up">
-                <h2>Patronazna terapija</h2>
+                <h2>Patronažna terapija</h2>
                 <br><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                <p>Patronažna terapija je oblik fizikalne terapije sprovden van zdravstvene ustanove u kućnom okruženju na samog pacijenta. Cilj je omogućiti kvalitetan tok rehabilitacije shodno indikacijama za njenu primjenu.</p>
                     <br><br>
                     <button type="button" class="button raise" id="btn4"  data-toggle="modal" data-target="#myModal4">Detaljnije</button>
             </div>
@@ -854,7 +852,7 @@
                   </div>
                   <div>
                       <img  src="./assets/check_.svg" alt="">
-                  <p> pušta mišiće </p>
+                  <p> Opušta mišiće </p>
                   </div>
                   <div>
                       <img  src="./assets/check_.svg" alt="">
@@ -881,9 +879,15 @@
       <div class="bottom-footer">
         <div class="company-footer" data-aos="fade-up">
           <h2>Pollex Physio</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-        </div>
+          <p>Fizikalna terapija je kompleksan vid rehabilitacije koji ima za cilj smanjenje bola, poboljšanje pokretljivosti, i funkcionalnosti čovjeka.Predstavlja najbolji odabir terapije akutnog i hroničnog bola sistema organa za kretanje čovjeka.Krećite se,živite kvalitetnije, što prije se vratite<span id="dots">...</span><span id="more1"> normalnoj funkciji!</p>
+           
+          <p><span id="more2">Filozofija rada Pollex physio koncepta zasniva se na primjeni polivalentnih tehnika rada i najkvalitetnijih svjetski priznatih modaliteta fizikalne terapije, pažljivo selektovanih,doziranih pacijentu shodno posvećenom odnosu jedan na jedan, ne tretirajući usko problematiku, već kompletnu funkciju neophodnu za što veći stepen samostalnosti i bolji kvalitet življenja!
+          </span> </p> <p><span id="more3">Sedare dolorem, divinum opus est!
+Smanjiti bol, Božansko je djelo!     - latinska medicinska poslovica</span>
+</p>
+
+<button onclick="myShow()" id="myBtn">Pročitaj više</button> </div>
+        
         <div class="links-footer">
           
          <!-- Kontakt forma -->
@@ -907,11 +911,11 @@
             <div class="">
                 <h2 class=" mb-4 font-weight-bold" >Informacije</h2>
                 <p>
-                  <i class="fas fa-home mr-3"></i> Vinogradska, Podgorica</p>
+                  <i class="fas fa-home mr-3"></i>Ul.Vinogradska, 81 000 Podgorica</p>
                 <p>
                   <i class="fas fa-envelope mr-3"></i> brajkovic93@gmail.com</p>
                 <p>
-                  <i class="fas fa-phone mr-3"></i> +382 67 270 793
+                  <i class="fas fa-phone mr-3"></i> +382 67 27 07 93
                 </p>
             
               </div>
@@ -960,6 +964,30 @@
       }
       
       }
+
+    
+  function myShow() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more1");
+    var moreText2 = document.getElementById("more2");
+    var moreText3 = document.getElementById("more3");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Pročitaj više";
+      moreText.style.display = "none";
+      moreText2.style.display = "none";
+      moreText3.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Pročitaj manje";
+      moreText.style.display = "inline";
+      moreText2.style.display = "inline";
+      moreText3.style.display = "inline";
+    }
+  }
+
 
       AOS.init();
 
