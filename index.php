@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Pollex</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.css">
-
+     <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script>
+  <![endif]-->
     <script src="./js/Jquery.js"></script>
     <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    
 
+   
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
+   
     <link rel="shortcut icon" type="image/x-icon" href="./assets/hnet.com-image.ico" />
     <meta property="og:image" content="http://pollex.qqriq.me/assets/LogoPolex.png" />
     <meta property="og:type" content="website" />
@@ -703,8 +710,8 @@
                     </div>    
                    
         </div>
-       <!-- Modal -->
-       <div id="myModal" class="modalNewa">
+       <!-- Modal  Newa-->
+       <div id="myModal5" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content" id="bio-modal">
@@ -821,6 +828,7 @@ upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijen
     </div>
    
   </div>
+ 
         </div>
     </section>
 
@@ -896,7 +904,32 @@ upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijen
                   </div>
               </div>
             </div>
-
+            <div class="myPacket" id="last-packet" data-aos="fade-up">
+            <div class="img-packet" ></div>
+            <h2>Master Reset Box</h2>
+            <p>1 tretman terapijska masaža 45 min</p>
+            <p>1 tretman YUMEIHO akupresura</p>
+            <p>1 tretman OMT spinalne manipulacije </p>
+            <p>1 tretman akupunkture iglama</p>
+            <div class="packets-list1">
+                <div>
+                    <img  src="./assets/check_.svg" alt="">
+                <p> Otklanja napetost i umor mišića </p>
+                </div>
+                <div>
+                    <img  src="./assets/check_.svg" alt="">
+                <p> Poboljsava opstu cirkulaciju </p>
+                </div>
+                <div>
+                    <img  src="./assets/check_.svg" alt="">
+                <p> Poboljšava posturu (držanje tijela)</p>
+                </div>
+                <div>
+                    <img  src="./assets/check_.svg" alt="">
+                <p> Poboljšava radne sposobnosti</p>
+                </div>
+            </div>
+          </div>
         
         </div>
 
@@ -912,15 +945,21 @@ upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijen
     </section>
 
     <section class="contact">
+      <div class="contact-title">
+       <div class="contact-title1"> <h3>Sedare dolorem, divinum opus est!</h3>
+        <h3 id="latin">Smanjiti bol, Božansko je djelo!</h3></div>
+        
+        <div class="contact-title2"> <h5> latinska medicinska poslovica</h5></div>
+
+      </div>
       <div class="bottom-footer">
         <div class="company-footer" data-aos="fade-up">
           <h2>Pollex Physio</h2>
           <p>Fizikalna terapija je kompleksan vid rehabilitacije koji ima za cilj smanjenje bola, poboljšanje pokretljivosti, i funkcionalnosti čovjeka.Predstavlja najbolji odabir terapije akutnog i hroničnog bola sistema organa za kretanje čovjeka.Krećite se,živite kvalitetnije, što prije se vratite<span id="dots">...</span><span id="more1"> normalnoj funkciji!</p>
            
           <p><span id="more2">Filozofija rada Pollex physio koncepta zasniva se na primjeni polivalentnih tehnika rada i najkvalitetnijih svjetski priznatih modaliteta fizikalne terapije, pažljivo selektovanih,doziranih pacijentu shodno posvećenom odnosu jedan na jedan, ne tretirajući usko problematiku, već kompletnu funkciju neophodnu za što veći stepen samostalnosti i bolji kvalitet življenja!
-          </span> </p> <p><span id="more3">Sedare dolorem, divinum opus est!
-Smanjiti bol, Božansko je djelo!     - latinska medicinska poslovica</span>
-</p>
+          </span> </p> 
+
 
 <button onclick="myShow()" id="myBtn">Pročitaj više</button> </div>
         
@@ -1006,7 +1045,7 @@ Smanjiti bol, Božansko je djelo!     - latinska medicinska poslovica</span>
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more1");
     var moreText2 = document.getElementById("more2");
-    var moreText3 = document.getElementById("more3");
+   
     var btnText = document.getElementById("myBtn");
   
     if (dots.style.display === "none") {
@@ -1014,13 +1053,12 @@ Smanjiti bol, Božansko je djelo!     - latinska medicinska poslovica</span>
       btnText.innerHTML = "Pročitaj više";
       moreText.style.display = "none";
       moreText2.style.display = "none";
-      moreText3.style.display = "none";
+     
     } else {
       dots.style.display = "none";
       btnText.innerHTML = "Pročitaj manje";
       moreText.style.display = "inline";
       moreText2.style.display = "inline";
-      moreText3.style.display = "inline";
     }
   }
 
@@ -1068,9 +1106,62 @@ Smanjiti bol, Božansko je djelo!     - latinska medicinska poslovica</span>
             }
           });
         });
+
+
+        $('#myModal5').on('show.bs.modal', function(e) {
+      window.location.hash = "modal";
+  });
+  $(window).on('hashchange', function (event) {
+      if(window.location.hash != "#modal") {
+          $('#myModal5').modal('hide');
+          document.getElementById('htmls').style.overflow = "auto";
+      }
+  });
+
+
+
+        $('#myModal1').on('show.bs.modal', function(e) {
+      window.location.hash = "modal";
+  });
+  $(window).on('hashchange', function (event) {
+      if(window.location.hash != "#modal") {
+          $('#myModal1').modal('hide');
+          document.getElementById('htmls').style.overflow = "auto";
+      }
+  });
+        $('#myModal2').on('show.bs.modal', function(e) {
+      window.location.hash = "modal";
+  });
+  $(window).on('hashchange', function (event) {
+      if(window.location.hash != "#modal") {
+          $('#myModal2').modal('hide');
+          document.getElementById('htmls').style.overflow = "auto";
+      }
+  });
+        $('#myModal3').on('show.bs.modal', function(e) {
+      window.location.hash = "modal";
+  });
+  $(window).on('hashchange', function (event) {
+      if(window.location.hash != "#modal") {
+          $('#myModal3').modal('hide');
+          document.getElementById('htmls').style.overflow = "auto";
+      }
+  });
+       $('#myModal4').on('show.bs.modal', function(e) {
+      window.location.hash = "modal";
+  });
+  $(window).on('hashchange', function (event) {
+      if(window.location.hash != "#modal") {
+          $('#myModal4').modal('hide');
+          document.getElementById('htmls').style.overflow = "auto";
+      }
+  });
       });
 
       </script>
+
+      <script>
+       </script>
 
 </body>
 </html>
