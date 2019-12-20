@@ -122,7 +122,7 @@ background-size: cover;
 
 
 
-#biographyNav a::after{
+/* #biographyNav a::after{
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -138,11 +138,20 @@ background-size: cover;
 #biographyNav a:hover::after { 
     width: 100%; 
     left: 0; 
-  }
+  } */
 
-  #therapyNav a:hover{
+  #biographyNav a:hover{
       color: #1fc4c4;
   }
+  #therapyNav a:hover{
+    color: #1fc4c4;
+}
+#packetsNav a:hover{
+    color: #1fc4c4;
+}
+#contactNav a:hover{
+    color: #1fc4c4;
+}
 
   
 
@@ -305,6 +314,10 @@ color: #1fc4c4!important;
     margin: 0px 20px;
     text-align: justify;
     font-family: 'Assistant',sans-serif;
+}
+
+#bio-modal{
+    width: 80%!important;
 }
 
 #bio-modal #bio-list{
@@ -480,6 +493,15 @@ color: #1fc4c4!important;
     border: 1.5px solid #1fc4c4;
     border-radius: 3px;
   }
+  .img-packet3{
+    background-image: url('../assets/Reset-Box.jpg');
+    background-position: center;
+    background-size: cover;
+    width:  300px;
+    height: 250px;
+    border: 1.5px solid #1fc4c4;
+    border-radius: 3px;
+  }
 
   .title-packets{
       color: white;
@@ -608,14 +630,14 @@ color: #1fc4c4!important;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 100%;
     align-self: center;
     max-height: calc(100vh - 160px);
     overflow-y: auto;
     animation-name: animatetop;
     animation-duration: 0.6s
 
- 
+
   }
 
   .modal-content h1{
@@ -633,7 +655,7 @@ color: #1fc4c4!important;
   }
 
   .modal-dialog{
-      width: 70%!important;
+      width: 80%!important;
       margin: auto!important;
   }
 
@@ -644,7 +666,14 @@ color: #1fc4c4!important;
   
   .card-header h5{
     color: #004467;
+    font-size: 18px;
   }
+
+  .fa, .fas {
+padding-left: 5px;
+  }
+
+ 
 
   .card-body{
     display: flex;
@@ -665,9 +694,9 @@ color: #1fc4c4!important;
 
   .modal-body p{
     margin: 0;
-    font-size: 17px;
+    font-size: 14px;;
     color: #004467;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     font-family: Open Sans;
   }
 
@@ -692,6 +721,13 @@ color: #1fc4c4!important;
       padding: 0;
   }
 
+  .card-body .text-pad{
+    font:18px Open Sans;
+    font-style: normal;
+    color: #004467;
+    padding-bottom: 15px!important;
+  }
+
   .card-body #text1{
     font-size: 18px;
     color: #004467;
@@ -710,19 +746,205 @@ color: #1fc4c4!important;
 }
 
 
+#kinezi-ikonica{
+    background-image: url('../assets/Kineziterapijaikonica.svg');
+    height: 150px;
+    width: 150px;
+    margin-bottom: 35px;
+}
+
+#manuelna-ikonica{
+    background-image: url('../assets//Manuelneterapijeikonica.svg');
+    height: 150px;
+    width: 150px;
+    margin-bottom: 35px;
+}
+
+#patronazna-ikonica{
+    background-image: url('../assets/Patronaznaterapijaikonica.svg');
+    height: 150px;
+    width: 150px;
+    margin-bottom: 35px;
+}
+
+#elektro-ikonica{
+    background-image: url('../assets/Elektroterapija.svg');
+    height: 150px;
+    width: 150px;
+    margin-bottom: 35px; 
+}
+
 
 
   .card-image{
       display: flex;
-      width: 200px;
-      height: 220px;
-      background-image: url('../assets/spo.jpg');
+      width: 30%;
+        height: 260px;
+      background-image: url('../assets/sportska1.jpg');
       background-position: center;
       background-size: cover;
       margin-top: 30px;
       margin-bottom: 20px;
       border: 1.5px solid #1FC4C4;
   }
+
+  .card-image1{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/Neuroloskafizioterapija.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image2{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/Ortopedskafizioterapija.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image3{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/muskuloskeletalfizioterapija.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image4{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/EVOuredjaj.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image5{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/ELEKTROTERAPIJA-Electronicdesignmedigalmagnetotherapyuredjaj.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image6{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/ELEKTROTERAPIJA-electronicdesignmedicaluredaj.png');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+
+.card-image7{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/THERAGUNG3PRO.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image8{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/masaza11.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image9{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/yumeiho.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image10{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/dryneedling.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image11{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/omtspinalnamanipulacija.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image12{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/ERGONTEHNIKA.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
+.card-image13{
+    display: flex;
+    width: 30%;
+    height: 260px;
+    background-image: url('../assets/Patronaznafizioterapija.jpg');
+    background-position: top;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 1.5px solid #1FC4C4;
+}
+
 
   #flex{
       display: flex;
@@ -1017,8 +1239,97 @@ color: white;
 
 /* Viewport mobile */
 
+@media(max-width:1290px) and (min-width:1170px){
+.img-packet{
+    width: 250px;
+}
+.img-packet1{
+    width: 250px;
+}
+.img-packet2{
+    width: 250px;
+}
+.img-packet3{
+    width: 250px;
+}
+
+.myPacket{
+    width: 27rem;
+}
+#let-spec{
+    letter-spacing: -0.8px!important;
+}
+.card-wraper{
+    width: 100%!important;
+}
+}
+
+@media(max-width:1169px) and (min-width:950px){
+    .myPacket{
+        width: 38rem;
+    } 
+
+    .card-wraper{
+        width: 70%!important;
+    }
+}
+
+@media(min-width:1060px) and (max-width:1168px){
+    .card-wraper{
+        width: 60%!important;
+    }
+    .myCard {
+        width: 25rem;
+    }
+}
+
 @media(max-width:811px){
     .card-body{
+        width: 90%;
+    }
+    .card-image{
+        width: 90%;
+    }
+    .card-image1{
+        width: 90%;
+    }
+    .card-image2{
+        width: 90%;
+    }
+    .card-image3{
+        width: 90%;
+    }
+    .card-image4{
+        width: 90%;
+    }
+    .card-image5{
+        width: 90%;
+    }
+    .card-image6{
+        width: 90%;
+    }
+    .card-image7{
+        width: 90%;
+    }
+    .card-image8{
+        width: 90%;
+    }
+    .card-image9{
+        width: 90%;
+    }
+    .card-image10{
+        width: 90%;
+    }
+    .card-image11{
+        width: 90%;
+    }
+    .card-image11{
+        width: 90%;
+    }
+    .card-image12{
+        width: 90%;
+    }
+    .card-image13{
         width: 90%;
     }
 }
@@ -1031,6 +1342,51 @@ color: white;
     .contact-title h5{
         font-size: 20px;
     }
+    .card-image{
+        height: 350px;
+      }
+      .card-image1{
+          height: 350px;
+      }
+      .card-image2{
+          height: 350px;
+      }
+      .card-image3{
+          height: 350px;
+      }
+      .card-image4{
+          height: 350px;
+      }
+      .card-image5{
+          height: 350px;
+      }
+      .card-image6{
+          height: 350px;
+      }
+      .card-image7{
+        height: 350px;
+    }
+      .card-image8{
+          height: 350px;
+      }
+      .card-image9{
+          height: 350px;
+      }
+      .card-image10{
+          height: 350px;
+      }
+      .card-image11{
+          height: 350px;
+      }
+      .card-image11{
+          height: 350px;
+      }
+      .card-image12{
+          height: 350px;
+      }
+      .card-image13{
+          height: 350px;
+      }
 }
 
 @media (min-width:2071px) and (max-width:2300px){
@@ -1040,6 +1396,51 @@ color: white;
     .contact-title h5{
         font-size: 20px;
     }
+    .card-image{
+        height: 330px;
+      }
+      .card-image1{
+          height: 330px;
+      }
+      .card-image2{
+          height: 330px;
+      }
+      .card-image3{
+          height: 330px;
+      }
+      .card-image4{
+          height: 330px;
+      }
+      .card-image5{
+          height: 330px;
+      }
+      .card-image6{
+          height: 330px;
+      }
+      .card-image7{
+        height: 330px;
+    }
+      .card-image8{
+          height: 330px;
+      }
+      .card-image9{
+          height: 330px;
+      }
+      .card-image10{
+          height: 330px;
+      }
+      .card-image11{
+          height: 330px;
+      }
+      .card-image11{
+          height: 330px;
+      }
+      .card-image12{
+          height: 330px;
+      }
+      .card-image13{
+          height: 330px;
+      }
 }
 
 @media (min-width:1901px) and (max-width:2070px){
@@ -1049,6 +1450,51 @@ color: white;
     .contact-title h5{
         font-size: 20px;
     }
+    .card-image{
+        height: 300px;
+      }
+      .card-image1{
+          height: 300px;
+      }
+      .card-image2{
+          height: 300px;
+      }
+      .card-image3{
+          height: 300px;
+      }
+      .card-image4{
+          height: 300px;
+      }
+      .card-image5{
+          height: 300px;
+      }
+      .card-image6{
+          height: 300px;
+      }
+      .card-image7{
+        height: 300px;
+    }
+      .card-image8{
+          height: 300px;
+      }
+      .card-image9{
+          height: 300px;
+      }
+      .card-image10{
+          height: 300px;
+      }
+      .card-image11{
+          height: 300px;
+      }
+      .card-image11{
+          height: 300px;
+      }
+      .card-image12{
+          height: 300px;
+      }
+      .card-image13{
+          height: 300px;
+      }
 }
 
 @media (min-width:1751px) and (max-width:1900px){
@@ -1057,6 +1503,51 @@ color: white;
     }
     .contact-title h5{
         font-size: 20px;
+    }
+    .card-image{
+      height: 300px;
+    }
+    .card-image1{
+        height: 300px;
+    }
+    .card-image2{
+        height: 300px;
+    }
+    .card-image3{
+        height: 300px;
+    }
+    .card-image4{
+        height: 300px;
+    }
+    .card-image5{
+        height: 300px;
+    }
+    .card-image6{
+        height: 300px;
+    }
+    .card-image7{
+        height: 300px;
+    }
+    .card-image8{
+        height: 300px;
+    }
+    .card-image9{
+        height: 300px;
+    }
+    .card-image10{
+        height: 300px;
+    }
+    .card-image11{
+        height: 300px;
+    }
+    .card-image11{
+        height: 300px;
+    }
+    .card-image12{
+        height: 300px;
+    }
+    .card-image13{
+        height: 300px;
     }
 }
 

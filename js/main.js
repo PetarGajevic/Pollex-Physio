@@ -103,13 +103,12 @@ $(document).ready(function(){
       document.getElementById('htmls').style.overflow = "auto";
     }
    // Modal Biography
-   var modal = document.getElementById("myModal5");
+   var modal = document.getElementById("myModal");
    var btn = document.getElementById("more");
    var span = document.getElementsByClassName("close")[0];
    btn.onclick = function() {
        modal.style.display = "block";
        document.getElementById('htmls').style.overflow = "hidden";
-
      }
      // When the user clicks on <span> (x), close the modal
      span.onclick = function() {
@@ -124,6 +123,15 @@ $(document).ready(function(){
          document.getElementById('htmls').style.overflow = "auto";
        }
     })
+
+    $('#myModal').on('show.bs.modal', function(e) {
+      window.location.hash = "modal";
+  });
+  $(window).on('hashchange', function (event) {
+      if(window.location.hash != "#modal") {
+          $('#myModal').modal('hide');
+      }
+  });
 
   
 
@@ -176,11 +184,16 @@ $(document).ready(function(){
       spaceBetween: -20,
       freeMode: true,
       width: 1300,
-      pagination: {
+      touchEventsTarget: 'container',
+      simulateTouch: true,
+      preventClicks: false,
+       preventClicksPropagation: false,
+       grabCursor: true
+     /*  pagination: {
         el: '.swiper-pagination',
         clickable: true,
     
-      },
+      }, */
     });
    
 
