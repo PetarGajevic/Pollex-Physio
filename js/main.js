@@ -1,10 +1,10 @@
-
+/* 
 $(document).ready(function(){
 
   // Staticki slajder
   $('.carousel').carousel({
     interval: false
-});
+}); */
 
   // Hamburger
    $nav = $('.nav');
@@ -18,7 +18,7 @@ $(document).ready(function(){
     
     
   
-    window.addEventListener("click",  function(event) {
+   /* window.addEventListener("click",  function(event) {
       // Modal Kinezi terapija
       var modal5 = document.getElementById("myModal1");
       if (event.target == modal5) {
@@ -41,6 +41,7 @@ $(document).ready(function(){
             $('#myModal1').modal('hide');
         }
     });
+  });
 
       // Modal Elektro terapija
       var modal6 = document.getElementById("myModal2");
@@ -131,7 +132,7 @@ $(document).ready(function(){
       if(window.location.hash != "#modal") {
           $('#myModal').modal('hide');
       }
-  });
+       });
 
   
 
@@ -141,19 +142,19 @@ $(document).ready(function(){
 
     
 
-    var span5 = document.getElementById("close4")
-    span5.onclick = function() {
+     var span5 = document.getElementById("close4")
+      span5.onclick = function() {
       modal.style.display = "none";
       document.getElementById('htmls').style.overflow = "auto";
-    }
+     }
        
      
-    // Click to scroll on section
-    $('li#biographyNav').click(function(){
+     // Click to scroll on section
+     $('li#biographyNav').click(function(){
         positionabout = $('.biography').offset().top - $('.nav-menu').height();
         $('html, body').animate({scrollTop:positionabout}, '500', 'swing');
     
-    })
+     })
 
     $('li#therapyNav').click(function(){
       positiontherapy = $('.therapy-sec').offset().top - $('.nav-menu').height();
@@ -174,34 +175,31 @@ $(document).ready(function(){
     $('.nav-brand').click(function(){
       positiontop = $('.top-page').offset().top;
       $('html, body').animate({scrollTop:positiontop}, '500', 'swing');
-    })
+    }) */
 
 
     // Certificate slider
-    var number = 800;
+   
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      spaceBetween: -20,
+      // spaceBetween: -20,
       freeMode: true,
       width: 1300,
       touchEventsTarget: 'container',
-      simulateTouch: true,
-      preventClicks: false,
-       preventClicksPropagation: false,
-       grabCursor: true
-     /*  pagination: {
+       grabCursor: true,
+       pagination: {
         el: '.swiper-pagination',
         clickable: true,
     
-      }, */
+      },
     });
    
 
     
 
        
-      })
+     
       
      
  
-});
+// });
