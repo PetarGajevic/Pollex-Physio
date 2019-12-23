@@ -1,10 +1,10 @@
 /* 
 $(document).ready(function(){
-
+*/
   // Staticki slajder
   $('.carousel').carousel({
     interval: false
-}); */
+}); 
 
   // Hamburger
    $nav = $('.nav');
@@ -148,7 +148,7 @@ $(document).ready(function(){
       document.getElementById('htmls').style.overflow = "auto";
      }
        
-     
+     */
      // Click to scroll on section
      $('li#biographyNav').click(function(){
         positionabout = $('.biography').offset().top - $('.nav-menu').height();
@@ -175,14 +175,14 @@ $(document).ready(function(){
     $('.nav-brand').click(function(){
       positiontop = $('.top-page').offset().top;
       $('html, body').animate({scrollTop:positiontop}, '500', 'swing');
-    }) */
+    }) 
 
 
     // Certificate slider
    
     var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
-      // spaceBetween: -20,
+      spaceBetween: -20,
       freeMode: true,
       width: 1300,
       touchEventsTarget: 'container',

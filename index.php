@@ -863,7 +863,7 @@
                    
                            <div class="more" id="more">
                         <p id="moreIcon" data-toggle="modal" data-target="#myModal"></p>
-                        <p id="moreText" data-toggle="modal" data-target="#myModal">Pročitaj</p>
+                        <p id="moreText" data-toggle="modal" data-target="#myModal">Pročitaj više</p>
                     </div>   
                 </div>
                 <div class="bio-image" data-aos="fade-up"
@@ -1072,13 +1072,18 @@ upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijen
       <div class="bottom-footer">
         <div class="company-footer" data-aos="fade-up">
           <h2>Pollex Physio</h2>
-          <p>Fizikalna terapija je kompleksan vid rehabilitacije koji ima za cilj smanjenje bola, poboljšanje pokretljivosti, i funkcionalnosti čovjeka.Predstavlja najbolji odabir terapije akutnog i hroničnog bola sistema organa za kretanje čovjeka.Krećite se,živite kvalitetnije, što prije se vratite<span id="dots">...</span><span id="more1"> normalnoj funkciji!</p>
+          <p>Fizikalna terapija je kompleksan vid rehabilitacije koji ima za cilj smanjenje bola, poboljšanje pokretljivosti, i funkcionalnosti čovjeka.Predstavlja najbolji odabir terapije akutnog i hroničnog bola sistema organa za kretanje čovjeka.Krećite se,živite kvalitetnije, što prije se vratite<span id="dots">...</span><span id="more1" class="animated"> normalnoj funkciji!</p>
            
-          <p><span id="more2">Filozofija rada Pollex physio koncepta zasniva se na primjeni polivalentnih tehnika rada i najkvalitetnijih svjetski priznatih modaliteta fizikalne terapije, pažljivo selektovanih,doziranih pacijentu shodno posvećenom odnosu jedan na jedan, ne tretirajući usko problematiku, već kompletnu funkciju neophodnu za što veći stepen samostalnosti i bolji kvalitet življenja!
+          <p><span id="more2" class="animated">Filozofija rada Pollex physio koncepta zasniva se na primjeni polivalentnih tehnika rada i najkvalitetnijih svjetski priznatih modaliteta fizikalne terapije, pažljivo selektovanih,doziranih pacijentu shodno posvećenom odnosu jedan na jedan, ne tretirajući usko problematiku, već kompletnu funkciju neophodnu za što veći stepen samostalnosti i bolji kvalitet življenja!
           </span> </p> 
 
 
-<button onclick="myShow()" id="myBtn">Pročitaj više</button> </div>
+<!-- <button onclick="myShow()" id="myBtn">Pročitaj više</button> -->
+                  <div onclick="myShow()" class="more10" id="more10"  >
+                        <p id="moreIcon10" ></p>
+                        <p id="moreText10" >Pročitaj više</p>
+                    </div> 
+</div>
         
         <div class="links-footer">
           
@@ -1092,11 +1097,14 @@ upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijen
             <span class="error"></span>
             <textarea name=""  placeholder="Poruka" id="message1" name="message" ></textarea>
             <span id="error1"></span>
-            <button class="button raise" type="submit" name="submit" id="submit"> Posalji</button>
+            <button class="button raise" type="submit" name="submit" id="submit"> Pošalji</button>
           </form>
         </div>
 
-
+     <!--    <div class="more" id="more">
+                        <p id="moreIcon" data-toggle="modal" data-target="#myModal"></p>
+                        <p id="moreText" data-toggle="modal" data-target="#myModal">Pročitaj više</p>
+                    </div>   --> 
           <!-- X  Kontakt forma  X  -->
         </div>
         <div class="contact-footer" data-aos="fade-up">
@@ -1163,7 +1171,7 @@ upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijen
     var moreText = document.getElementById("more1");
     var moreText2 = document.getElementById("more2");
    
-    var btnText = document.getElementById("myBtn");
+    var btnText = document.getElementById("moreText10");
   
     if (dots.style.display === "none") {
       dots.style.display = "inline";
@@ -1176,6 +1184,8 @@ upotrebu pokreta I vjezbi kao vid terapijske procedure u  rehabilitaciji pacijen
       btnText.innerHTML = "Pročitaj manje";
       moreText.style.display = "inline";
       moreText2.style.display = "inline";
+      moreText.classList.add('slideInDown');
+      moreText2.classList.add('slideInDown');
     }
   }
 
@@ -1411,7 +1421,7 @@ window.addEventListener("click",  function(event) {
        
      
      // Click to scroll on section
-     $('li#biographyNav').click(function(){
+     /* $('li#biographyNav').click(function(){
         positionabout = $('.biography').offset().top - $('.nav-menu').height();
         $('html, body').animate({scrollTop:positionabout}, '500', 'swing');
     
@@ -1436,7 +1446,7 @@ window.addEventListener("click",  function(event) {
     $('.nav-brand').click(function(){
       positiontop = $('.top-page').offset().top;
       $('html, body').animate({scrollTop:positiontop}, '500', 'swing');
-    }) 
+    })  */
        </script>
 
 </body>
